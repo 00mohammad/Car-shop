@@ -38,11 +38,3 @@ Serve as a foundation for building a dynamic car website
 ```bash
 git clone https://github.com/00mohammad/Car-shop.git
 ```
-
-Car-shop/
-│
-├─ index.html # Main page
-├─ assets/
-│ ├─ css/ # Stylesheets
-│ ├─ js/ # JavaScript files
-│ └─ images/ # Car images
