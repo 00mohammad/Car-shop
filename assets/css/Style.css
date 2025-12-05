@@ -1,5 +1,7 @@
 body {
   font-family: "Poppins", sans-serif;
+  background-color: var(--body-color);
+  color: var(--white-color);
 }
 @font-face {
   font-family: "Poppins";
