@@ -76,3 +76,38 @@ body {
   --container-color: hsl(210, 5%, 7%);
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+li {
+  display: contents;
+  list-style: none;
+}
+li a {
+  text-decoration: none;
+  color: var(--title-color);
+}
+a :hover {
+  color: var(--first-color);
+  transition: 0.3s;
+  cursor: pointer;
+}
