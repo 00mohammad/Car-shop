@@ -1,8 +1,10 @@
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", "Exo", sans-serif;
   background-color: var(--body-color);
   color: var(--white-color);
 }
+
+/* Poppins Font */
 
 @font-face {
   font-family: "Poppins";
@@ -67,6 +69,71 @@ body {
   font-style: normal;
 }
 
+/* Exo Font */
+
+@font-face {
+  font-family: "Exo";
+  src: url("/assets/font/Exo-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Exo";
+  src: url("/assets/font/Exo-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Exo";
+  src: url("/assets/font/Exo-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Exo";
+  src: url("/assets/font/Exo-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Exo";
+  src: url("/assets/font/Exo-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Exo";
+  src: url("/assets/font/Exo-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Exo";
+  src: url("/assets/font/Exo-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Exo";
+  src: url("/assets/font/Exo-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Exo";
+  src: url("/assets/font/Exo-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
 :root {
   --first-color-alt: hsl(219, 67%, 52%);
   --first-color: hsl(220, 67%, 56%);
@@ -87,33 +154,47 @@ body {
 header {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
   padding: 2rem;
 }
 
-ul {
+.header__logo {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  align-items: center;
   justify-content: center;
-  gap: 4rem;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: Exo;
+  font-weight: 500;
 }
 
-li {
-  display: contents;
+.header__menu ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4rem;
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
-.li a {
+.header__menu a {
   text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
   color: var(--title-color);
 }
 
-a :hover {
-  color: var(--first-color);
-  transition: 0.3s;
+.header__menu a:hover {
   cursor: pointer;
+  color: var(--first-color);
+}
+.header__shape_Desktop {
+  display: block;
+}
+
+.header__shape_Desktop {
+  display: none;
 }
