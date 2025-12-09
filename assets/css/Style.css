@@ -154,9 +154,15 @@ body {
 header {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  padding: 2rem;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  background-image: url(/assets/img/shape\ big.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 35rem;
+  padding: 4rem;
+  margin-top: -3rem;
 }
 
 .header__logo {
@@ -191,10 +197,51 @@ header {
   cursor: pointer;
   color: var(--first-color);
 }
+
 .header__shape_Desktop {
   display: block;
 }
 
 .header__shape_Desktop {
-  display: none;
+  display: block;
+}
+
+.nav__text {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.nav__text p {
+  color: var(--text-color);
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: -25%;
+}
+
+nav h1 {
+  font-family: Exo;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+nav > p {
+  font-family: Exo;
+  font-weight: 500;
+  font-size: 1.4rem;
+  margin: 0.5rem;
+}
+
+.shape__small {
+  margin-left: 71.8%;
+  margin-top: -15%;
+}
+.Home__car {
+  margin-top: 3rem;
 }
