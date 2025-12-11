@@ -1,21 +1,47 @@
 /* Mobile Small */
 
 @media (max-width: 320px) {
+  .header__menu {
+    display: none;
+  }
+  header {
+    width: 29.5rem;
+  }
+  .shape__small {
+    margin-left: 9%;
+    margin-top: -50%;
+  }
+  nav {
+    margin-top: -100%;
+    margin-right: -153px;
+  }
+  .nav__temps {
+    margin-top: 43%;
+  }
 }
 
 /* Mobile Medium */
 
 @media (max-width: 375px) {
+  .header__menu {
+    display: none;
+  }
 }
 
 /* Mobile Large */
 
 @media (max-width: 425px) {
+  .header__menu {
+    display: none;
+  }
 }
 
 /* Mobile XL */
 
 @media (max-width: 600px) {
+  .header__menu {
+    display: none;
+  }
 }
 
 /* Tablet */
