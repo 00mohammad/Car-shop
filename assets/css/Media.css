@@ -9,14 +9,20 @@
   }
   .shape__small {
     margin-left: 9%;
-    margin-top: -50%;
+    margin-top: -68%;
   }
   nav {
     margin-top: -100%;
     margin-right: -153px;
   }
   .nav__temps {
-    margin-top: 43%;
+    margin-top: -38%;
+  }
+  .shape__small {
+    display: none;
+  }
+  .shape__small_mobil {
+    display: block;
   }
 }
 
