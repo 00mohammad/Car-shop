@@ -1,108 +1,31 @@
 /* Mobile Small */
 
 @media (max-width: 320px) {
-  .header__menu {
-    display: none;
-  }
-  header {
-    width: 29.5rem;
-  }
-  .shape__small {
-    margin-left: 9%;
-    margin-top: -68%;
-  }
-  nav {
-    margin-top: -100%;
-    margin-right: -153px;
-  }
-  .nav__temps {
-    margin-top: -38%;
-  }
-  .shape__small {
-    display: none;
-  }
-  .shape__small_mobil {
-    display: block;
-  }
-  .header-menu {
-    display: block;
-  }
 }
 
 /* Mobile Medium */
 
 @media (max-width: 375px) {
-  .header__menu {
-    display: none;
-  }
-  .header-menu {
-    display: block;
-  }
-}
-
-/* Mobile Large */
-
-@media (max-width: 425px) {
-  .header__menu {
-    display: none;
-  }
-  .header-menu {
-    display: block;
-  }
 }
 
 /* Mobile XL */
 
 @media (max-width: 600px) {
-  .header__menu {
-    display: none;
-  }
 }
 
 /* Tablet */
 
 @media (max-width: 768px) {
-  header {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    flex-direction: row;
-  }
-
-  .header__menu ul {
-    margin-left: 75%;
-  }
-  nav {
-    margin-top: -50%;
-  }
-  .header__logo {
-    margin-left: -35%;
-  }
-  .nav__temps {
-    margin-top: -55%;
-  }
-  .shape__small {
-    margin-left: 61.6%;
-    margin-top: -15%;
-  }
-
 }
 
 /* Small Laptop */
 
 @media (max-width: 1024px) {
-  .shape__small {
-    margin-left: 58%;
-    margin-top: -30%;
-  }
-
 }
 
 /* Desktop */
 
 @media (max-width: 1280px) {
-
 }
 
 /* Large Desktop */
