@@ -2,37 +2,48 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car-shop</title>
-    <link rel="stylesheet" href="./assets/css/Style.css">
-    <link rel="stylesheet" href="./assets/css/Media.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car-shop</title>
+  <link rel="stylesheet" href="./assets/css/Style.css">
+  <link rel="stylesheet" href="./assets/css/Media.css">
 </head>
 
 <body>
 
-    <div class="container">
-        <div class="header">
-            <div class="logo">
-                <img src="./assets/image/logo.png" alt="logo">
-            </div>
-            <div class="menu">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="content">
-            <div class="text">
-                <h1>Discover the world of cars</h1>
-                <p>Explore our collection of cars and find the perfect vehicle for your needs.</p>
-                <button>Shop Now</button>
-            </div>
-        </div>
-    </div>
+  <header class="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">Car-Shop</a>
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="ri-menu-line"></i>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="home">
+      <div class="home__container container">
+        <img src="./assets/img/Car.png" alt="Car" class="home__car">
+        <h1 class="home__title">Car-Shop</h1>
+        <p class="home__description">The best car shop in the world</p>
+      </div>
+    </section>
+  </main>
 </body>
+
+<Script src="./assets/js/APP.js"></Script>
 
 </html>
