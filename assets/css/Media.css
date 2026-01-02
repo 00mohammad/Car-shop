@@ -16,7 +16,7 @@
 /* Tablet */
 
 @media (max-width: 768px) {
-  nav {
+  header {
     flex-wrap: wrap;
   }
 
@@ -32,26 +32,30 @@
     height: 80px;
   }
 
-  .nav-links {
+  .header-links {
     display: none;
     flex-basis: 100%;
     background-color: var(--text-color-light);
   }
 
-  .nav-links li {
+  .header-links li {
     flex-basis: 100%;
   }
 
-  .nav-links a {
+  .header-links a {
     text-align: center;
     font-size: 20px;
   }
 
-  .nav-links a:hover {
+  .header-links a:hover {
+    color: var(--first-color);
+  }
+  
+  .header-links li a:hover {
     color: var(--first-color);
   }
 
-  .nav-links .nav-cat-button {
+  .header-links .header-cat-button {
     padding: 30px 16px;
     margin-left: 0;
     border: none;
@@ -59,7 +63,7 @@
     margin-bottom: 20px;
   }
 
-  .nav-links .nav-cat-button:hover {
+  .header-links .header-cat-button:hover {
     color: var(--first-color);
   }
 }

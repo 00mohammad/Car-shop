@@ -134,6 +134,8 @@ body {
   font-style: normal;
 }
 
+/* colors */
+
 :root {
   --first-color-alt: hsl(219, 67%, 52%);
   --first-color: hsl(220, 67%, 56%);
@@ -145,7 +147,9 @@ body {
   --container-color: hsl(210, 5%, 7%);
 }
 
-nav {
+/** header**/
+
+header {
   position: sticky;
   top: 0;
   display: flex;
@@ -163,14 +167,14 @@ nav {
   width: 100%;
 }
 
-.nav-links {
+.header-links {
   display: flex;
   align-items: center;
   list-style: none;
   gap: 3rem;
 }
 
-.nav-links a {
+.header-links a {
   display: block;
   padding: 30px 16px;
   color: var(--white-color);
@@ -181,15 +185,21 @@ nav {
   transition: all ease-in-out 100ms;
 }
 
-.nav-links a :hover {
+.header-links a :hover {
   color: var(--first-color);
 }
 
-.nav-links .nav-cat-button {
+.header-links li a:hover {
+  color: var(--first-color);
+}
+
+.header-links .header-cat-button {
   padding: 10px 18px;
   margin-left: 16px;
   border-radius: 50px;
 }
+
+/*menu */
 
 .hamburger {
   display: none;

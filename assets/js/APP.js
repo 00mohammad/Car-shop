@@ -1,13 +1,13 @@
 const hamburger = document.querySelector(".hamburger");
-const navLinks = document.querySelector(".nav-links");
+const headerLinks = document.querySelector(".header-links");
 let menuOpen = false;
 
 hamburger.addEventListener("click", () => {
   if (menuOpen == false) {
-    navLinks.style.display = "Block";
+    headerLinks.style.display = "Block";
     menuOpen = true;
   } else if (menuOpen == true) {
-    navLinks.style.display = "None";
+    headerLinks.style.display = "None";
     menuOpen = false;
   }
 });
