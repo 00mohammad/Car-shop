@@ -156,15 +156,31 @@ header {
   justify-content: space-between;
   padding: 0 20px;
   background-color: var(--body-color);
+  align-items: flex-start;
 }
 
 .logo {
+  width: 200px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
-.logo img {
-  width: 100%;
+.shape-big {
+  height: 50rem;
+}
+
+.logo-img {
+  margin-left: -30rem;
+  margin-bottom: 5rem;
+  height: 15%;
+}
+
+.shape-big-mobil {
+  display: none;
 }
 
 .header-links {
@@ -213,3 +229,5 @@ header {
   background-color: var(--white-color);
   margin: 3px;
 }
+
+/* main */

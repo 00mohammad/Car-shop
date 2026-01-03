@@ -17,7 +17,10 @@
 
 @media (max-width: 768px) {
   header {
+    display: flex;
+    align-content: space-around;
     flex-wrap: wrap;
+    align-items: stretch;
   }
 
   .hamburger {
@@ -50,7 +53,7 @@
   .header-links a:hover {
     color: var(--first-color);
   }
-  
+
   .header-links li a:hover {
     color: var(--first-color);
   }
@@ -65,6 +68,22 @@
 
   .header-links .header-cat-button:hover {
     color: var(--first-color);
+  }
+
+  .shape-big {
+    display: none;
+  }
+
+  .shape-big-mobil {
+    display: block;
+    margin-top: 25rem;
+    background-image: url(/assets/img/Logo.png);
+    background-repeat: no-repeat;
+    background-size: 29% 7%;
+    background-position: top center;
+    margin-left: 32rem;
+    background-position: top center;
+    background-position: 10% 9%;
   }
 }
 
