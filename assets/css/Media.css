@@ -85,6 +85,26 @@
     background-position: top center;
     background-position: 10% 9%;
   }
+
+  .hero-title {
+    font-weight: 600;
+    font-size: 2rem;
+  }
+  .hero-subtitle {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  .shape-small {
+    display: none;
+  }
+
+  .shape-small-mobil {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(10%);
+  }
 }
 
 /* Small Laptop */
