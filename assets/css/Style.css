@@ -218,6 +218,10 @@ header {
   border-radius: 50px;
 }
 
+.home-mobil {
+  display: none;
+}
+
 /*menu */
 
 .hamburger {
@@ -233,9 +237,9 @@ header {
   margin: 3px;
 }
 
-/* main */
+/* nav */
 
-main {
+nav {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -303,6 +307,9 @@ main {
 
 .item h1 {
   margin: 0;
+  font-family: "Exo";
+  font-weight: 600;
+  font-size: 1.5rem;
 }
 
 .item > p {
@@ -313,16 +320,18 @@ main {
 .shape-small-mobil {
   display: none;
 }
+
 .shape-small {
   position: absolute;
   right: 0;
   top: 50%;
   transform: translateY(47%);
 }
+
 .image-container {
   position: relative;
-  width: 150px; 
-  height: 150px; 
+  width: 150px;
+  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -335,14 +344,16 @@ main {
   position: absolute;
   top: 0;
   left: 0;
-  width: 70%; 
-  height: 70%; 
+  width: 70%;
+  height: 70%;
   z-index: -1;
 }
 
 .start-text {
   position: absolute;
   z-index: 1;
-  margin-right: 2.6rem;
+  margin-right: 2.8rem;
   margin-bottom: 3.5rem;
 }
+ 
+
