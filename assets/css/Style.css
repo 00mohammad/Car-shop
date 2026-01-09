@@ -363,7 +363,7 @@ nav {
   position: absolute;
   z-index: 1;
   margin-right: 2.8rem;
-  margin-bottom: 3.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .about-container {
@@ -464,6 +464,5 @@ nav {
   display: none;
 }
 
-
-
+/* main */
 

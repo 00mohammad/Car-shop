@@ -11,3 +11,4 @@ hamburger.addEventListener("click", () => {
     menuOpen = false;
   }
 });
+
