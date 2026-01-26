@@ -14,9 +14,12 @@ body {
   box-sizing: border-box;
 }
 
+
 /* **Fonts**  */
 
+
 /* Poppins Font */
+
 
 @font-face {
   font-family: "Poppins";
@@ -81,9 +84,13 @@ body {
   font-style: normal;
 }
 
+
 /* **Fonts**  */
 
+
+
 /* Exo Font */
+
 
 @font-face {
   font-family: "Exo";
@@ -148,7 +155,9 @@ body {
   font-style: normal;
 }
 
+
 /* colors */
+
 
 :root {
   --first-color-alt: hsl(219, 67%, 52%);
@@ -247,7 +256,9 @@ header {
   margin: 3px;
 }
 
+
 /* nav */
+
 
 nav {
   display: flex;
@@ -463,6 +474,7 @@ nav {
 .img-main-mobil {
   display: none;
 }
+
 
 /* main */
 
