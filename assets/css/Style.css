@@ -15,10 +15,10 @@ body {
 }
 
 
-/* **Fonts**  */
+/*  **Fonts**   */
 
 
-/* Poppins Font */
+/*  Poppins Font  */
 
 
 @font-face {
@@ -85,11 +85,11 @@ body {
 }
 
 
-/* **Fonts**  */
+/*   **Fonts**  */
 
 
 
-/* Exo Font */
+/*  Exo Font  */
 
 
 @font-face {
@@ -156,7 +156,7 @@ body {
 }
 
 
-/* colors */
+/*  colors  */
 
 
 :root {
@@ -241,7 +241,9 @@ header {
   display: none;
 }
 
-/*menu */
+
+/*  menu   */
+
 
 .hamburger {
   display: none;
@@ -257,7 +259,7 @@ header {
 }
 
 
-/* nav */
+/*  nav  */
 
 
 nav {
@@ -476,5 +478,5 @@ nav {
 }
 
 
-/* main */
+/*  main  */
 
