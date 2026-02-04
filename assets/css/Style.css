@@ -465,3 +465,16 @@ nav {
 }
 
 /*  main  */
+
+/* main {
+  background: black;
+   height: 100%;
+} */
+
+main h1 {
+  text-align: center;
+  max-width: 30%;
+  margin-top: 10%;
+  font-family: "Exo";
+  font-weight: 500;
+}
