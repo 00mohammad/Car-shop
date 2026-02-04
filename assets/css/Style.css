@@ -475,6 +475,78 @@ main h1 {
   text-align: center;
   max-width: 30%;
   margin-top: 10%;
+  margin-left: 35%;
   font-family: "Exo";
   font-weight: 500;
+}
+
+.car-card {
+  position: relative;
+  width: 320px;
+  padding: 24px;
+  border-radius: 24px;
+  background: var(--body-color);
+  color: var(--white-color);
+  overflow: hidden;
+  font-family: "Poppins", sans-serif;
+}
+
+.car-shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0.08;
+  pointer-events: none;
+}
+
+.car-brand {
+  width: 70px;
+  margin-bottom: 14px;
+}
+
+.car-title h1 {
+  font-size: 22px;
+  margin: 0;
+}
+
+.car-title p {
+  margin: 4px 0 0;
+  color: var(--white-color);
+  font-size: 14px;
+}
+
+.car-specs {
+  display: flex;
+  justify-content: space-between;
+  margin: 22px 0;
+}
+
+.spec {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--white-color);
+}
+
+.spec img {
+  width: 16px;
+}
+
+.car-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.car-footer h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.car-footer img {
+  width: 22px;
+  cursor: pointer;
 }
