@@ -188,11 +188,50 @@
   .image-container {
     margin-left: 5rem;
   }
+
+  .cars {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 1rem;
+    padding: 1rem;
+    margin: 0;
+  }
+
+  .cars::-webkit-scrollbar {
+    display: none;
+  }
+
+  .car-card {
+    flex: 0 0 85%;
+    scroll-snap-align: center;
+    padding: 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px var(--body-color);
+    margin-right: 1rem;
+  }
 }
 
 /* Small Laptop */
 
 @media (max-width: 1024px) {
+  .cars {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 0 2rem;
+  }
+
+  .car-card {
+    flex: 0 0 45%;
+  }
+
+  .text-top {
+    max-width: 60%;
+    margin: 0 auto 3rem;
+    padding: 0;
+  }
 }
 
 /* Desktop */
