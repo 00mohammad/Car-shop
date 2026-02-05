@@ -428,7 +428,7 @@ nav {
 }
 
 .about-content h1 {
-  max-width: 50%;
+  max-width: 100%;
   font-weight: normal;
   font-size: 1.5rem;
   color: var(--white-color);
@@ -466,18 +466,30 @@ nav {
 
 /*  main  */
 
-/* main {
-  background: black;
-   height: 100%;
-} */
+main {
+  margin-top: -7rem;
+  background: var(--body-color);
+}
 
-main h1 {
+.text-top {
+  max-width: 19%;
+  margin-top: 5%;
+  margin-left: 40%;
+  font-size: 1.5rem;
   text-align: center;
-  max-width: 30%;
-  margin-top: 10%;
-  margin-left: 35%;
   font-family: "Exo";
   font-weight: 500;
+}
+
+.cars {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  gap: 4rem;
+  padding: 12rem;
 }
 
 .car-card {
@@ -489,20 +501,18 @@ main h1 {
   color: var(--white-color);
   overflow: hidden;
   font-family: "Poppins", sans-serif;
+  background-image: url(/assets/img/shape\ box.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.car-shape {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  opacity: 0.08;
-  pointer-events: none;
+.car-card h1 > {
+  margin-left: 0;
 }
 
 .car-brand {
-  width: 70px;
-  margin-bottom: 14px;
+  margin-left: 25%;
 }
 
 .car-title h1 {
@@ -517,8 +527,8 @@ main h1 {
 }
 
 .car-specs {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   margin: 22px 0;
 }
 
@@ -541,12 +551,14 @@ main h1 {
 }
 
 .car-footer h2 {
-  margin: 0;
-  font-size: 20px;
+  margin-top: -10px;
   font-weight: 600;
 }
 
 .car-footer img {
-  width: 22px;
+  width: 3rem;
   cursor: pointer;
+  background-color: var(--first-color);
+  border-radius: 50% 10% 50% 10%;
+  padding: 1rem;
 }
