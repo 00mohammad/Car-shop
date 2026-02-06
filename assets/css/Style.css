@@ -501,13 +501,16 @@ main {
   background: var(--body-color);
   color: var(--white-color);
   overflow: hidden;
-  font-family: "Poppins", sans-serif;
+  font-family: "Exo";
   background-image: url(/assets/img/shape\ box.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
+.car-card h1 {
+  font-weight: 500;
+}
 .car-card h1 > {
   margin-left: 0;
 }
@@ -517,6 +520,14 @@ main {
 }
 
 .car-card:nth-child(2) {
+  display: none;
+}
+
+.car-card:nth-child(3) {
+  display: none;
+}
+
+.car-card:nth-child(4) {
   display: none;
 }
 
@@ -570,4 +581,35 @@ main {
   background-color: var(--first-color);
   border-radius: 50% 10% 50% 10%;
   padding: 1rem;
+}
+
+.Car-popular {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.mobile {
+  display: none;
+}
+
+.featured-cars {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.featured-cars h2 {
+  padding: 3rem;
+}
+
+.filter-icons {
+  margin-left: 2rem;
+}
+
+.filter-icons img {
+  margin-right: 1rem;
 }

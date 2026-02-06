@@ -1,6 +1,13 @@
 /* Mobile Small */
 
 @media (max-width: 320px) {
+  .featured-cars h2 {
+    padding: 1.5rem;
+    margin-right: -1.5rem;
+  }
+  .filter-icons img {
+    margin-right: 1rem;
+  }
 }
 
 /* Mobile Medium */
@@ -196,7 +203,6 @@
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
-
     padding: 1rem 0;
     margin: 0;
   }
@@ -216,6 +222,13 @@
   }
 
   .car-card:nth-child(2) {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+  .mobile {
     display: block;
   }
 }
@@ -241,6 +254,14 @@
     margin-top: 10rem;
     margin-bottom: 4rem;
     padding: 0.5rem;
+  }
+
+  .car-card:nth-child(4) {
+    display: block;
+  }
+
+  .car-card:nth-child(3) {
+    display: block;
   }
 }
 
