@@ -472,9 +472,10 @@ main {
 }
 
 .text-top {
-  max-width: 19%;
-  margin-top: 5%;
-  margin-left: 40%;
+  padding: 2rem;
+  max-width: 30%;
+  margin-top: 12%;
+  margin-left: 35%;
   font-size: 1.5rem;
   text-align: center;
   font-family: "Exo";
@@ -489,12 +490,12 @@ main {
   align-items: center;
   margin-top: 0;
   gap: 4rem;
-  padding: 12rem;
+  padding: 2rem;
 }
 
 .car-card {
   position: relative;
-  width: 320px;
+  min-width: 15rem;
   padding: 24px;
   border-radius: 24px;
   background: var(--body-color);
@@ -509,6 +510,14 @@ main {
 
 .car-card h1 > {
   margin-left: 0;
+}
+
+.car-card:nth-child(1) {
+  display: none;
+}
+
+.car-card:nth-child(2) {
+  display: none;
 }
 
 .car-brand {
