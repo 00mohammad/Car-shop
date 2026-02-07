@@ -568,7 +568,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 4rem;
+  gap: 4.5rem;
 }
 
 .car-footer h2 {
@@ -577,15 +577,11 @@ main {
 }
 
 .car-footer img {
-  width: 56px;
-  height: 49px;
+  width: 3rem;
   cursor: pointer;
   background-color: var(--first-color);
   border-radius: 50% 10% 50% 10%;
-  padding: 13px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 1rem;
 }
 
 .Car-popular {
@@ -627,6 +623,7 @@ main {
   font-family: sans-serif;
   position: relative;
   overflow: hidden;
+
   background: var(--body-color) url("/assets/img/shape.png") no-repeat center /
     cover;
 }
@@ -649,18 +646,17 @@ main {
 }
 
 .box-card__price {
-  font-size: 1.3rem;
   margin-top: -1rem;
   font-weight: 500;
 }
 
 .box-card__icon {
-  width: 56px;
-  height: 49px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
   background-color: var(--first-color);
   border-radius: 50% 10% 50% 10%;
-  padding: 13px;
+  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;

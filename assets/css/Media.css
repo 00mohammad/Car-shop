@@ -230,10 +230,7 @@
   }
   .mobile {
     display: block;
-  }
-
-  .boxes {
-    padding: 0;
+    margin-left: 3rem;
   }
 
   .boxes {
@@ -242,9 +239,12 @@
     gap: 3rem;
     margin-top: 3rem;
     justify-content: center;
+    padding: 0;
+    margin-left: 1rem;
+    width: 100%;
   }
 
-  .box-card{
+  .box-card {
     width: 18rem;
   }
 }
