@@ -231,6 +231,22 @@
   .mobile {
     display: block;
   }
+
+  .boxes {
+    padding: 0;
+  }
+
+  .boxes {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 3rem;
+    margin-top: 3rem;
+    justify-content: center;
+  }
+
+  .box-card{
+    width: 18rem;
+  }
 }
 
 /* Small Laptop */
