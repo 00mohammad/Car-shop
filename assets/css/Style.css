@@ -669,3 +669,82 @@ main {
   padding: 18rem;
   gap: 7rem;
 }
+
+/* ===== Offer Section ===== */
+
+.offer {
+  background-image: url(/assets/img/subscribe-bg.png);
+  background-repeat: no-repeat;
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  background-color: #0f0f14; /* ساده و شیک */
+}
+/* 
+باکس اصلی
+.offer__container {
+  width: 90%;
+  max-width: 1200px;
+  background: #14141c;
+  border-radius: 28px;
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+} */
+
+/* متن */
+.offer__content {
+  flex: 1;
+  color: var(--white-color);
+}
+
+.offer__title {
+  font-size: 34px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.offer__desc {
+  font-size: 16px;
+  line-height: 1.9;
+  margin-bottom: 30px;
+  color: var(--text-color);
+  max-width: 420px;
+}
+
+.offer__btn {
+  padding: 14px 32px;
+  background: var(--first-color);
+  border: none;
+  border-radius: 8px;
+  color: var(--white-color);
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.offer__btn:hover {
+  opacity: 0.85;
+}
+
+/* تصویر */
+.offer__image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.offer__image img {
+  width: 100%;
+  max-width: 420px;
+  object-fit: contain;
+}
+
+/* پیش‌فرض دسکتاپ */
+.subscribe-mobile {
+  display: none;
+}

@@ -5,6 +5,7 @@
     padding: 1.5rem;
     margin-right: -1.5rem;
   }
+
   .filter-icons img {
     margin-right: 1rem;
   }
@@ -246,6 +247,34 @@
 
   .box-card {
     width: 18rem;
+  }
+
+  .offer__container {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  .offer__desc {
+    max-width: 100%;
+    margin: 0 auto 25px;
+  }
+
+  .offer__title {
+    font-size: 28px;
+  }
+
+  .offer__image img {
+    width: 300px;
+  }
+
+  .subscribe {
+    display: none;
+  }
+
+  .subscribe-mobile {
+    display: block;
   }
 }
 
