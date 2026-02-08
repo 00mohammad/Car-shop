@@ -670,31 +670,40 @@ main {
   gap: 7rem;
 }
 
-/* ===== Offer Section ===== */
-
 .offer {
-  background-image: url(/assets/img/subscribe-bg.png);
-  background-repeat: no-repeat;
-  padding: 100px 0;
+  position: relative;
   display: flex;
   justify-content: center;
-  background-color: #0f0f14; /* ساده و شیک */
+  background-color: #0f0f14;
+  overflow: hidden;
 }
-/* 
-باکس اصلی
+
+.img.body {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.img.body.mobile {
+  display: none;
+}
+
 .offer__container {
+  position: relative;
+  z-index: 2;
   width: 90%;
   max-width: 1200px;
-  background: #14141c;
-  border-radius: 28px;
-  padding: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 60px;
-} */
+  padding: 60px;
+  border-radius: 28px;
+}
 
-/* متن */
 .offer__content {
   flex: 1;
   color: var(--white-color);
@@ -730,21 +739,23 @@ main {
   opacity: 0.85;
 }
 
-/* تصویر */
 .offer__image {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .offer__image img {
   width: 100%;
   max-width: 420px;
-  object-fit: contain;
 }
 
-/* پیش‌فرض دسکتاپ */
+.subscribe {
+  display: block;
+}
+
 .subscribe-mobile {
   display: none;
 }

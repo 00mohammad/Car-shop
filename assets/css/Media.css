@@ -249,20 +249,37 @@
     width: 18rem;
   }
 
+  .img.body {
+    display: none;
+  }
+
+  .img.body.mobile {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30rem;
+    z-index: 1;
+  }
+
   .offer__container {
+    display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 40px 20px;
-    gap: 30px;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 7rem 0;
+  }
+
+  .offer__title {
+    font-size: 20px;
   }
 
   .offer__desc {
     max-width: 100%;
     margin: 0 auto 25px;
-  }
-
-  .offer__title {
-    font-size: 28px;
   }
 
   .offer__image img {
