@@ -759,3 +759,13 @@ main {
   display: none;
 }
 
+.icon-cars {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-top: 10%;
+  margin-left: 19%;
+  margin-bottom: 5%;
+  gap: 8rem;
+}

@@ -326,6 +326,17 @@
   .car-card:nth-child(3) {
     display: block;
   }
+  
+  .icon-cars {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, auto);
+    margin-top: 54%;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 4rem;
+  }
 }
 
 /* Desktop */
