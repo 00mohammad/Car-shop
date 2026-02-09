@@ -18,7 +18,7 @@
 
 /* Mobile XL */
 
-@media (max-width: 600px) {
+@media (max-width: 425px) {
 }
 
 /* Tablet */
@@ -229,6 +229,7 @@
   .desktop {
     display: none;
   }
+
   .mobile {
     display: block;
     margin-left: 3rem;
@@ -253,12 +254,12 @@
     display: none;
   }
 
-  .img.body.mobile {
+  .img-body-mobile {
     display: block;
     position: absolute;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 10%;
+    transform: translateX(-30%);
     width: 30rem;
     z-index: 1;
   }
@@ -278,12 +279,7 @@
   }
 
   .offer__desc {
-    max-width: 100%;
-    margin: 0 auto 25px;
-  }
-
-  .offer__image img {
-    width: 300px;
+    font-size: 13px;
   }
 
   .subscribe {
@@ -292,6 +288,11 @@
 
   .subscribe-mobile {
     display: block;
+    margin-left: 2.5rem;
+  }
+
+  .offer__btn {
+    width: 60%;
   }
 }
 

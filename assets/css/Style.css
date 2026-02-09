@@ -675,7 +675,6 @@ main {
   display: flex;
   justify-content: center;
   background-color: #0f0f14;
-  overflow: hidden;
 }
 
 .img.body {
@@ -687,7 +686,7 @@ main {
   pointer-events: none;
 }
 
-.img.body.mobile {
+.img-body-mobile {
   display: none;
 }
 
@@ -705,6 +704,11 @@ main {
 }
 
 .offer__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: center;
   flex: 1;
   color: var(--white-color);
 }
@@ -747,11 +751,6 @@ main {
   position: relative;
 }
 
-.offer__image img {
-  width: 100%;
-  max-width: 420px;
-}
-
 .subscribe {
   display: block;
 }
@@ -759,3 +758,4 @@ main {
 .subscribe-mobile {
   display: none;
 }
+
