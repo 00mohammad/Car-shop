@@ -776,10 +776,8 @@ main {
 
 .footer {
   color: var(--white-color);
-  font-family: "Arial", sans-serif;
-  position: relative;
+  font-family: "Exo";
   padding: 60px 20px 40px;
-  overflow: hidden;
 }
 
 .footer a {
@@ -790,10 +788,10 @@ main {
 .footer-top {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
   justify-content: space-between;
   position: relative;
   flex-direction: column;
+  gap: 40px;
 }
 
 .footer-shape-top,
@@ -872,8 +870,4 @@ main {
   height: 24px;
   cursor: pointer;
   transition: transform 0.3s;
-}
-
-.social-icons img:hover {
-  transform: scale(1.2);
 }
