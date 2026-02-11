@@ -802,7 +802,7 @@ main {
 }
 
 .footer-shape-top {
-  margin-top: -5rem;
+  top: 0;
   left: 0;
 }
 
@@ -814,10 +814,9 @@ main {
 .footer-logo {
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  margin-bottom: 15%;
+  justify-content: flex-start;
+  margin-left: 8%;
+  margin-bottom: -2%;
   gap: 10px;
 }
 
@@ -827,14 +826,22 @@ main {
 }
 
 .footer-description {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 16%;
+  margin-left: 7rem;
+  margin-bottom: -11%;
   color: var(--text-color-light);
 }
 
 .footer-links {
   display: flex;
-  flex: 1;
+  flex-direction: row;
+  margin-left: 35%;
   gap: 40px;
-  flex-wrap: wrap;
 }
 
 .footer-column {
