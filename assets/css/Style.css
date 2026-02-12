@@ -214,7 +214,7 @@ header {
   transition: all ease-in-out 100ms;
 }
 
-.header-links a :hover {
+.header-links a:hover {
   color: var(--first-color);
 }
 
@@ -502,7 +502,7 @@ main {
   color: var(--white-color);
   overflow: hidden;
   font-family: "Exo";
-  background-image: url(/assets/img/shape\ box.png);
+  background-image: url(/assets/img/shape-box.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -568,7 +568,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 4.5rem;
+  gap: 4.2rem;
 }
 
 .car-footer h2 {
@@ -626,7 +626,7 @@ main {
   position: relative;
   overflow: hidden;
 
-  background: var(--body-color) url("/assets/img/shape.png") no-repeat center /
+  background: var(--body-color) url("/assets/img/shape-back.png") no-repeat center /
     cover;
 }
 
