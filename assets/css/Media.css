@@ -294,33 +294,27 @@
     width: 60%;
   }
 
-  .footer-links {
+  .links-wrapper {
     display: flex;
     flex-direction: column;
     margin-left: 0;
   }
 
-  .footer-shape-top {
+  .shape-top {
     width: 260px;
     top: -40px;
     left: -40px;
+    display: none;
   }
 
-  .footer-shape-bottom {
+  .shape-bottom {
     width: 260px;
     bottom: -40px;
     right: -40px;
-  }
-
-  .footer-shape-top {
     display: none;
   }
 
-  .footer-shape-bottom {
-    display: none;
-  }
-
-  .footer-description {
+  .brand-text {
     margin: 0;
     max-width: 86%;
   }

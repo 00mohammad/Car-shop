@@ -327,7 +327,7 @@ nav {
   color: var(--text-color);
 }
 
-.shape-small-mobil {
+.small-mobil {
   display: none;
 }
 
@@ -774,18 +774,19 @@ main {
 
 /*  Footer  */
 
-.footer {
+.site-end {
   color: var(--white-color);
   font-family: "Exo";
   padding: 60px 20px 40px;
+  position: relative;
 }
 
-.footer a {
+.site-end a {
   color: inherit;
   text-decoration: none;
 }
 
-.footer-top {
+.end-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -794,22 +795,22 @@ main {
   gap: 40px;
 }
 
-.footer-shape-top,
-.footer-shape-bottom {
+.shape-top,
+.shape-bottom {
   position: absolute;
 }
 
-.footer-shape-top {
+.shape-top {
   top: 0;
   left: 0;
 }
 
-.footer-shape-bottom {
-  bottom: 0;
+.shape-bottom {
+  top: 0;
   right: 0;
 }
 
-.footer-logo {
+.brand-block {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -818,12 +819,12 @@ main {
   gap: 10px;
 }
 
-.footer-logo h1 {
+.brand-block h1 {
   font-size: 28px;
   margin: 0;
 }
 
-.footer-description {
+.brand-text {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -835,37 +836,37 @@ main {
   color: var(--text-color-light);
 }
 
-.footer-links {
+.links-wrapper {
   display: flex;
   flex-direction: row;
   margin-left: 35%;
   gap: 40px;
 }
 
-.footer-column {
+.links-col {
   min-width: 29%;
 }
 
-.footer-column h2 {
+.links-col h2 {
   font-size: 18px;
   margin-bottom: 15px;
   color: var(--white-color);
 }
 
-.footer-column p {
+.links-col p {
   margin: 8px 0;
   color: var(--text-color-light);
   cursor: pointer;
   transition: color 0.3s;
 }
 
-.social-icons {
+.social-group {
   display: flex;
   gap: 2rem;
   margin-top: 10px;
 }
 
-.social-icons img {
+.social-group img {
   width: 24px;
   height: 24px;
   cursor: pointer;
