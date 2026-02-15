@@ -268,9 +268,10 @@
     flex-direction: column;
     text-align: center;
     flex-wrap: nowrap;
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content: center;
     padding: 7rem 0;
+    margin-left: 20%;
   }
 
   .offer__title {
@@ -287,7 +288,7 @@
 
   .subscribe-mobile {
     display: block;
-    margin-left: 2rem;
+    margin-right: -1.6rem;
   }
 
   .offer__btn {
@@ -361,6 +362,20 @@
     margin-top: 54%;
     margin-left: 0%;
     gap: 4rem;
+  }
+
+  .brand-block {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 2%;
+    margin-bottom: -2%;
+    gap: 10px;
+  }
+
+  .shape-mobile {
+    display: block;
+    
   }
 }
 
