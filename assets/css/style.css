@@ -32,7 +32,6 @@ body {
   font-style: normal;
 }
 
-
 @font-face {
   font-family: "Poppins";
   src: url("/assets/font/Poppins-Light.ttf") format("truetype");
@@ -627,8 +626,8 @@ main {
   position: relative;
   overflow: hidden;
 
-  background: var(--body-color) url("/assets/img/shape-back.png") no-repeat center /
-    cover;
+  background: var(--body-color) url("/assets/img/shape-back.png") no-repeat
+    center / cover;
 }
 
 .box-card__brand {
@@ -669,7 +668,7 @@ main {
   display: grid;
   grid-template-columns: repeat(3, auto);
   margin-top: -13%;
-  padding: 15rem 14rem 6rem 15rem;
+  padding: 19rem 25rem 12rem 27rem;
   gap: 7rem;
 }
 
