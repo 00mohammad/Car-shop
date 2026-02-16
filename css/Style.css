@@ -20,63 +20,63 @@ body {
 
 @font-face {
   font-family: "Poppins";
-  src: url("/assets/font/Poppins-Thin.ttf") format("truetype");
+  src: url("/font/Poppins-Thin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Poppins";
-  src: url("/assets/font/Poppins-ExtraLight.ttf") format("truetype");
+  src: url("/font/Poppins-ExtraLight.ttf") format("truetype");
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Poppins";
-  src: url("/assets/font/Poppins-Light.ttf") format("truetype");
+  src: url("/font/Poppins-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Poppins";
-  src: url("/assets/font/Poppins-Regular.ttf") format("truetype");
+  src: url("/font/Poppins-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Poppins";
-  src: url("/assets/font/Poppins-Medium.ttf") format("truetype");
+  src: url("/font/Poppins-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Poppins";
-  src: url("/assets/font/Poppins-SemiBold.ttf") format("truetype");
+  src: url("/font/Poppins-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Poppins";
-  src: url("/assets/font/Poppins-Bold.ttf") format("truetype");
+  src: url("/font/Poppins-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Poppins";
-  src: url("/assets/font/Poppins-ExtraBold.ttf") format("truetype");
+  src: url("/font/Poppins-ExtraBold.ttf") format("truetype");
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Poppins";
-  src: url("/assets/font/Poppins-Black.ttf") format("truetype");
+  src: url("/font/Poppins-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
 }
@@ -87,63 +87,63 @@ body {
 
 @font-face {
   font-family: "Exo";
-  src: url("/assets/font/Exo-Thin.ttf") format("truetype");
+  src: url("/font/Exo-Thin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Exo";
-  src: url("/assets/font/Exo-ExtraLight.ttf") format("truetype");
+  src: url("/font/Exo-ExtraLight.ttf") format("truetype");
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Exo";
-  src: url("/assets/font/Exo-Light.ttf") format("truetype");
+  src: url("/font/Exo-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Exo";
-  src: url("/assets/font/Exo-Regular.ttf") format("truetype");
+  src: url("/font/Exo-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Exo";
-  src: url("/assets/font/Exo-Medium.ttf") format("truetype");
+  src: url("/font/Exo-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Exo";
-  src: url("/assets/font/Exo-SemiBold.ttf") format("truetype");
+  src: url("/font/Exo-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Exo";
-  src: url("/assets/font/Exo-Bold.ttf") format("truetype");
+  src: url("/font/Exo-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Exo";
-  src: url("/assets/font/Exo-ExtraBold.ttf") format("truetype");
+  src: url("/font/Exo-ExtraBold.ttf") format("truetype");
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Exo";
-  src: url("/assets/font/Exo-Black.ttf") format("truetype");
+  src: url("/font/Exo-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
 }
@@ -502,7 +502,7 @@ main {
   color: var(--white-color);
   overflow: hidden;
   font-family: "Exo";
-  background-image: url(/assets/img/shape-box.png);
+  background-image: url(/img/shape-box.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -627,7 +627,7 @@ main {
   position: relative;
   overflow: hidden;
 
-  background: var(--body-color) url("/assets/img/shape-back.png") no-repeat
+  background: var(--body-color) url("/img/shape-back.png") no-repeat
     center / cover;
 }
 
