@@ -90,7 +90,7 @@
   .shape-big-mobil {
     display: block;
     margin-top: 25rem;
-    background-image: url("/img/Logo.png");
+    background-image: url("/assets/img/Logo.png");
     background-repeat: no-repeat;
     background-size: 29% 7%;
     background-position: top center;
