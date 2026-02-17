@@ -60,27 +60,6 @@ body {
   font-style: normal;
 }
 
-@font-face {
-  font-family: "Poppins";
-  src: url("/assets/font/Poppins-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Poppins";
-  src: url("/font/Poppins-ExtraBold.ttf") format("truetype");
-  font-weight: 800;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Poppins";
-  src: url("/assets/font/Poppins-Black.ttf") format("truetype");
-  font-weight: 900;
-  font-style: normal;
-}
-
 /*   **Fonts**  */
 
 /*  Exo Font  */
@@ -124,27 +103,6 @@ body {
   font-family: "Exo";
   src: url("/assets/font/Exo-SemiBold.ttf") format("truetype");
   font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Exo";
-  src: url("/assets/font/Exo-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Exo";
-  src: url("/assets/font/Exo-ExtraBold.ttf") format("truetype");
-  font-weight: 800;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Exo";
-  src: url("/assets/font/Exo-Black.ttf") format("truetype");
-  font-weight: 900;
   font-style: normal;
 }
 
@@ -473,9 +431,9 @@ main {
 
 .text-top {
   padding: 2rem;
-  max-width: 30%;
+  max-width: 19%;
   margin-top: 12%;
-  margin-left: 35%;
+  margin-left: 40%;
   font-size: 1.5rem;
   text-align: center;
   font-family: "Exo";
