@@ -377,7 +377,9 @@
     display: block;
   }
   .shape25 {
-    display: none;
+    display: block;
+    margin-top: -24rem;
+    padding-left: 5.5rem;
   }
 }
 

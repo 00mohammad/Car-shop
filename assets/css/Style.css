@@ -740,7 +740,7 @@ main {
 .site-end {
   color: var(--white-color);
   font-family: "Exo";
-  padding: 60px 20px 40px;
+  padding: 60px 20px 0px;
   position: relative;
 }
 
