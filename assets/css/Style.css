@@ -836,10 +836,10 @@ main {
   transition: transform 0.3s;
 }
 
-.shape-mobile {
+.shape-right {
   display: none;
 }
 
-.shape25{
+.shape-left{
   display: none;
 }

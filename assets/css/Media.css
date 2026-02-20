@@ -258,7 +258,7 @@
     display: block;
     position: absolute;
     left: 8%;
-    transform: translateX(-30%);
+    transform: translateX(-21%);
     width: 30rem;
     z-index: 1;
   }
@@ -288,7 +288,7 @@
 
   .subscribe-mobile {
     display: block;
-    margin-right: -1.6rem;
+    margin-right: -10%;
   }
 
   .offer__btn {
@@ -373,13 +373,16 @@
     gap: 10px;
   }
 
-  .shape-mobile {
+  .shape-right {
     display: block;
+    margin-top: -44rem;
   }
-  .shape25 {
+
+  .shape-left {
     display: block;
-    margin-top: -24rem;
+    margin-top: -30rem;
     padding-left: 5.5rem;
+    margin-right: -10%;
   }
 }
 
