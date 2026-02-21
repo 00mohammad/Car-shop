@@ -154,6 +154,16 @@ header {
   display: none;
 }
 
+/* 
+.img-mobil-Right {
+display: flex;
+    align-items: center;
+} */
+
+.Logo-img {
+  display: none;
+}
+
 .header-links {
   display: flex;
   align-items: center;
@@ -570,34 +580,10 @@ main {
 }
 
 .filter-icons img {
-  margin-right: 2rem;
+  margin-right: 1rem;
 }
 
 /*   section   */
-
-.box-card {
-  width: 100%;
-  height: 20rem;
-  padding: 24px;
-  border-radius: 18px;
-  color: var(--white-color);
-  font-family: sans-serif;
-  position: relative;
-  overflow: hidden;
-
-  background: var(--body-color) url("/assets/img/shape-back.png") no-repeat
-    center / cover;
-}
-
-.box-card__brand {
-  margin: 0;
-  font-size: 22px;
-}
-
-.box-card__model {
-  margin: 4px 0 16px;
-  color: var(--text-color-light);
-}
 
 .box-card__image {
   margin-top: 2rem;
@@ -605,14 +591,36 @@ main {
 
 .box-card__footer {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 16px;
+  align-items: flex-end;
+  flex-direction: row;
+  gap: 6rem;
 }
 
 .box-card__price {
   margin-top: -1rem;
   font-weight: 500;
+}
+
+.box-card {
+  position: relative;
+}
+
+.shape-back {
+  position: absolute;
+  top: 50%;
+  left: 38%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 100%;
+}
+
+.box-card__image {
+  position: relative;
+  z-index: 2;
+}
+
+.box-card h2 {
+  margin-top: 20%;
 }
 
 .box-card__icon {
@@ -633,6 +641,7 @@ main {
   margin-top: -12%;
   padding: 20rem 21rem 14rem 25rem;
   gap: 9rem;
+  width: 100%;
 }
 
 .offer {
@@ -727,10 +736,11 @@ main {
 .icon-cars {
   display: flex;
   flex-direction: row;
-  align-items: center;
   flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
   margin-top: 10%;
-  margin-left: 19%;
+  margin-left: 0%;
   margin-bottom: 5%;
   gap: 8rem;
 }
@@ -840,6 +850,6 @@ main {
   display: none;
 }
 
-.shape-left{
+.shape-left {
   display: none;
 }

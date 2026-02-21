@@ -6,6 +6,10 @@
     margin-right: -1.5rem;
   }
 
+  .filter-icons {
+    margin-left: 1rem;
+  }
+
   .filter-icons img {
     margin-right: 1rem;
   }
@@ -90,13 +94,7 @@
   .shape-big-mobil {
     display: block;
     margin-top: 25rem;
-    background-image: url("/assets/img/Logo.png");
-    background-repeat: no-repeat;
-    background-size: 29% 7%;
-    background-position: top center;
     margin-left: 32rem;
-    background-position: top center;
-    background-position: 10% 9%;
   }
 
   .hero-title {
@@ -114,7 +112,7 @@
     display: none;
   }
 
-  .shape-small-mobil {
+  .small-mobil {
     display: block;
     position: absolute;
     right: 0;
