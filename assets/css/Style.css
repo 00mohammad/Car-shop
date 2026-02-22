@@ -20,42 +20,42 @@ body {
 
 @font-face {
   font-family: "Poppins";
-  src: url("/assets/font/Poppins-Thin.ttf") format("truetype");
+  src: url("../font/Poppins-Thin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Poppins";
-  src: url("/assets/font/Poppins-ExtraLight.ttf") format("truetype");
+  src: url("../font/Poppins-ExtraLight.ttf") format("truetype");
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Poppins";
-  src: url("/assets/font/Poppins-Light.ttf") format("truetype");
+  src: url("../font/Poppins-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Poppins";
-  src: url("/assets/font/Poppins-Regular.ttf") format("truetype");
+  src: url("../font/Poppins-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Poppins";
-  src: url("/assets/font/Poppins-Medium.ttf") format("truetype");
+  src: url("../font/Poppins-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Poppins";
-  src: url("/assets/font/Poppins-SemiBold.ttf") format("truetype");
+  src: url("../font/Poppins-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
@@ -66,42 +66,42 @@ body {
 
 @font-face {
   font-family: "Exo";
-  src: url("/assets/font/Exo-Thin.ttf") format("truetype");
+  src: url("../font/Exo-Thin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Exo";
-  src: url("/assets/font/Exo-ExtraLight.ttf") format("truetype");
+  src: url("../font/Exo-ExtraLight.ttf") format("truetype");
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Exo";
-  src: url("/assets/font/Exo-Light.ttf") format("truetype");
+  src: url("../font/Exo-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Exo";
-  src: url("/assets/font/Exo-Regular.ttf") format("truetype");
+  src: url("../font/Exo-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Exo";
-  src: url("/assets/font/Exo-Medium.ttf") format("truetype");
+  src: url("../font/Exo-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Exo";
-  src: url("/assets/font/Exo-SemiBold.ttf") format("truetype");
+  src: url("../font/Exo-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
 }
@@ -608,7 +608,7 @@ main {
 .shape-back {
   position: absolute;
   top: 50%;
-  left: 38%;
+  left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
   width: 100%;
@@ -638,10 +638,11 @@ main {
 .boxes {
   display: grid;
   grid-template-columns: repeat(3, auto);
+  padding: 21rem 0rem 9rem 25rem;
   margin-top: -12%;
-  padding: 20rem 21rem 14rem 25rem;
-  gap: 9rem;
+  margin-left: -12%;
   width: 100%;
+  gap: 9rem;
 }
 
 .offer {
