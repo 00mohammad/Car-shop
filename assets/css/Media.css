@@ -255,7 +255,7 @@
   .img-body-mobile {
     display: block;
     position: absolute;
-    left: 8%;
+    left: 10%;
     transform: translateX(-21%);
     width: 30rem;
     z-index: 1;
@@ -316,6 +316,9 @@
   .brand-text {
     margin: 0;
     max-width: 86%;
+  }
+  .site-end {
+    padding: 0;
   }
 }
 
@@ -379,7 +382,6 @@
   .shape-left {
     display: block;
     margin-top: -30rem;
-    padding-left: 5.5rem;
     margin-right: -10%;
   }
 }
