@@ -154,13 +154,15 @@ header {
   display: none;
 }
 
-/* 
 .img-mobil-Right {
-display: flex;
-    align-items: center;
-} */
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
 
-.Logo-img {
+.logo-img-mobil {
   display: none;
 }
 
@@ -441,7 +443,7 @@ main {
 
 .text-top {
   padding: 2rem;
-  max-width: 19%;
+  max-width: 24%;
   margin-top: 12%;
   margin-left: 40%;
   font-size: 1.5rem;

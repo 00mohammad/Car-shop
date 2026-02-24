@@ -49,6 +49,10 @@
     height: 80px;
   }
 
+  .logo-img-mobil {
+    display: block;
+  }
+
   .header-links {
     display: none;
     flex-basis: 100%;
@@ -95,6 +99,10 @@
     display: block;
     margin-top: 25rem;
     margin-left: 32rem;
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-position: 14% 10%;
+    background-size: 30%;
   }
 
   .hero-title {
@@ -117,7 +125,7 @@
     position: absolute;
     right: 0;
     top: 50%;
-    transform: translateX(11%);
+    transform: translateX(15%);
   }
 
   .home {
@@ -236,12 +244,12 @@
   .boxes {
     display: grid;
     grid-template-columns: repeat(1, auto);
-    gap: 3rem;
-    margin-top: 3rem;
     justify-content: center;
-    padding: 0;
-    margin-left: 1rem;
+    padding: 1rem;
+    margin-top: 3rem;
+    margin-left: 2rem;
     width: 100%;
+    gap: 3rem;
   }
 
   .box-card {
@@ -255,7 +263,7 @@
   .img-body-mobile {
     display: block;
     position: absolute;
-    left: 10%;
+    left: -5%;
     transform: translateX(-21%);
     width: 30rem;
     z-index: 1;
@@ -286,7 +294,7 @@
 
   .subscribe-mobile {
     display: block;
-    margin-right: -10%;
+    margin-right: -17%;
   }
 
   .offer__btn {
@@ -381,8 +389,8 @@
 
   .shape-left {
     display: block;
-    margin-top: -30rem;
-    margin-right: -10%;
+    margin-top: -35rem;
+    margin-right: -15%;
   }
 }
 
