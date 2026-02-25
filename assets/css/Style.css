@@ -481,6 +481,7 @@ main {
 .car-card h1 {
   font-weight: 500;
 }
+
 .car-card h1 > {
   margin-left: 0;
 }
