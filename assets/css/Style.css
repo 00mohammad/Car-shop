@@ -20,30 +20,10 @@ body {
 
 @font-face {
   font-family: "Poppins";
-  src: url("../font/Poppins-Thin.ttf") format("truetype");
-  font-weight: 100;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Poppins";
-  src: url("../font/Poppins-ExtraLight.ttf") format("truetype");
-  font-weight: 200;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Poppins";
-  src: url("../font/Poppins-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Poppins";
   src: url("../font/Poppins-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -51,6 +31,7 @@ body {
   src: url("../font/Poppins-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -58,6 +39,7 @@ body {
   src: url("../font/Poppins-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
 
 /*   **Fonts**  */
@@ -66,37 +48,10 @@ body {
 
 @font-face {
   font-family: "Exo";
-  src: url("../font/Exo-Thin.ttf") format("truetype");
-  font-weight: 100;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Exo";
-  src: url("../font/Exo-ExtraLight.ttf") format("truetype");
-  font-weight: 200;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Exo";
-  src: url("../font/Exo-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Exo";
   src: url("../font/Exo-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
-}
-
-@font-face {
-  font-family: "Exo";
-  src: url("../font/Exo-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -104,6 +59,7 @@ body {
   src: url("../font/Exo-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
+  font-display: swap;
 }
 
 /*  colors  */
@@ -181,14 +137,10 @@ header {
   font-size: 16px;
   font-family: "Poppins";
   text-transform: uppercase;
-  transition: all ease-in-out 100ms;
+  transition: color 100ms ease-in-out;
 }
 
 .header-links a:hover {
-  color: var(--first-color);
-}
-
-.header-links li a:hover {
   color: var(--first-color);
 }
 
@@ -480,10 +432,7 @@ main {
 
 .car-card h1 {
   font-weight: 500;
-}
-
-.car-card h1 > {
-  margin-left: 0;
+  margin: 0;
 }
 
 .car-card:nth-child(1) {
