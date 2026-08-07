@@ -43,6 +43,9 @@
     justify-content: center;
     width: 2rem;
     margin-right: -2rem;
+    border: 0;
+    padding: 0;
+    background: transparent;
   }
 
   .logo {
@@ -57,6 +60,10 @@
     display: none;
     flex-basis: 100%;
     background-color: var(--text-color-light);
+  }
+
+  .header-links.is-open {
+    display: flex;
   }
 
   .header-links li {
@@ -99,10 +106,6 @@
     display: block;
     margin-top: 25rem;
     margin-left: 32rem;
-    background-image: url(../img/logo.png);
-    background-repeat: no-repeat;
-    background-position: 14% 10%;
-    background-size: 30%;
   }
 
   .hero-title {

@@ -1,44 +1,59 @@
-# Car-Shop 🚗
+# Car-Shop / Elecar
 
-## Website Demo [Demo](https://00mohammad.github.io/Car-shop/)
+Elecar is a responsive electric-car showcase built as a focused, static frontend portfolio project. It presents a hero vehicle, Porsche listings, featured cars, promotional content, brand marks, and a responsive navigation menu while preserving the supplied visual design.
 
-A **modern and responsive** website to showcase cars with interactive cards and a clean, attractive UI.  
-Built with **HTML, CSS, and JavaScript**, and fully usable on **desktop and mobile** devices.
+## Features
 
----
+- Responsive desktop, tablet, and mobile layouts
+- Mobile navigation toggle with keyboard-accessible controls
+- Hero, about, popular cars, featured cars, offers, brands, and footer sections
+- Local Poppins and Exo font assets
+- Local image and SVG assets with responsive variants
 
-## 🌟 Features
+## Technologies
 
-- **Responsive design**: works perfectly on mobile, tablet, and desktop
-- Displays car listings with beautiful and interactive cards
-- Smooth animations and effects using CSS and JavaScript
-- Great for educational projects, portfolios, or showcasing cars
+- Semantic HTML5
+- CSS3 (Flexbox, Grid, media queries, and custom properties)
+- Vanilla JavaScript
 
----
+## Responsive design
 
-## 📸 Website Demo
+The layout adapts across mobile, tablet, and desktop viewport sizes. Dedicated mobile image variants are retained for the hero, about, feature, and offer areas where the original design uses them.
 
-![Desktop View](./assets/Design/Desktop%20x%201024%20-%20%20Responsive%20car%20website.png)
-![Mobile View](./assets/Design/Movil%20x%2024%20-%20Responsive%20car%20website.png)
+## Live demo
 
----
+[Open the Elecar demo](https://00mohammad.github.io/Car-shop/)
 
-💡 Use Cases
+## Screenshots
 
-Showcase your portfolio or web design skills
+![Desktop design](./assets/Design/Desktop%20x%201024%20-%20%20Responsive%20car%20website.png)
+![Mobile design](./assets/Design/Movil%20x%2024%20-%20Responsive%20car%20website.png)
 
-Educational project for learning HTML, CSS, and JavaScript
+## Project structure
 
-Serve as a foundation for building a dynamic car website
-
----
-
-## 🛠️ Installation & Usage
-
-1. Clone the project:
-
-```bash
-git clone https://github.com/00mohammad/Car-shop.git
+```text
+.
+├── index.html
+├── assets/
+│   ├── css/      # Main and responsive stylesheets
+│   ├── font/     # Local Poppins and Exo fonts
+│   ├── img/      # Raster and responsive image assets
+│   ├── js/       # Navigation behavior
+│   └── svg/      # Icons and brand artwork
+├── DEMO.md
+└── README.md
 ```
 
-figma https://www.figma.com/design/hKBTQmQkWZwktEM1AAaESH/Figma-Design-Responsive-car-website--Community-?node-id=0-1&p=f&t=ecAnQuihpSoPY9xA-0
+## Run locally
+
+Because this is a static site, no dependency installation is required. From the project root, run:
+
+```bash
+python -m http.server 8000
+```
+
+Then open <http://localhost:8000> in a browser.
+
+## Repository
+
+<https://github.com/00mohammad/Car-shop>

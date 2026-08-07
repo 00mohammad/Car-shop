@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Car-shop</title>
-    <link rel="icon" href="./assets/img/vector-img.png" />
+    <title>Elecar | Electric Car Showcase</title>
+    <meta
+      name="description"
+      content="Explore Elecar's responsive showcase of luxury electric cars and their features." />
+    <link rel="icon" href="./assets/img/vector-img.png" type="image/png" />
     <link rel="stylesheet" href="./assets/css/Style.css" />
     <link rel="stylesheet" href="./assets/css/Media.css" />
   </head>
@@ -21,8 +24,8 @@
         <img
           class="shape-big"
           src="./assets/img/shape-big.png"
-          alt="decorative background shape"
-        />
+          alt
+          aria-hidden="true" />
         <img class="logo-img" src="./assets/img/Logo.png" alt="Elecar logo" />
 
         <!-- img-mobil-Right -->
@@ -31,32 +34,38 @@
           <img
             class="shape-big-mobil"
             src="./assets/img/shape-big-mobil.png"
-            alt="decorative mobile background shape"
-          />
+            alt
+            aria-hidden="true" />
         </div>
       </div>
 
       <!-- menu -->
 
-      <div class="hamburger">
+      <button
+        class="hamburger"
+        type="button"
+        aria-label="Toggle navigation"
+        aria-expanded="false">
         <div class="bar"></div>
         <div class="bar"></div>
         <div class="bar"></div>
-      </div>
+      </button>
 
-      <ul class="header-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Popular</a></li>
-        <li><a class="header-cat-button" href="#Featured">Featured</a></li>
-      </ul>
+      <nav aria-label="Primary navigation">
+        <ul class="header-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#popular">Popular</a></li>
+          <li><a class="header-cat-button" href="#featured">Featured</a></li>
+        </ul>
+      </nav>
     </header>
 
     <!--  nav  -->
 
-    <nav>
+    <section id="home" aria-labelledby="hero-title">
       <div class="hero-content">
-        <h1 class="hero-title">Choose The Best Car</h1>
+        <h1 class="hero-title" id="hero-title">Choose The Best Car</h1>
         <p class="hero-subtitle">Porsche Mission E</p>
         <div class="car-info">
           <img src="./assets/svg/vector-svg.svg" alt="icon" class="car-icon" />
@@ -65,13 +74,11 @@
         <img
           class="home"
           src="./assets/img/home-1.png"
-          alt="Porsche Mission E hero car"
-        />
+          alt="Porsche Mission E hero car" />
         <img
           class="home-mobil"
           src="./assets/img/home-1-mobil.png"
-          alt="Porsche Mission E hero car mobile"
-        />
+          alt="Porsche Mission E hero car mobile" />
       </div>
 
       <!-- items -->
@@ -80,7 +87,7 @@
         <!-- item -->
 
         <div class="item">
-          <img src="./assets/svg/vector1.svg" alt="icon" />
+          <img src="./assets/svg/vector1.svg" alt aria-hidden="true" />
           <h1>24°</h1>
           <p>TEMPERATURE</p>
         </div>
@@ -88,7 +95,7 @@
         <!-- item -->
 
         <div class="item">
-          <img src="./assets/svg/km.svg" alt="icon" />
+          <img src="./assets/svg/km.svg" alt aria-hidden="true" />
           <h1>873</h1>
           <p>MILEAGE</p>
         </div>
@@ -96,7 +103,7 @@
         <!-- item -->
 
         <div class="item">
-          <img src="./assets/svg/vector2.svg" alt="icon" />
+          <img src="./assets/svg/vector2.svg" alt aria-hidden="true" />
           <h1>94%</h1>
           <p>BATTERY</p>
         </div>
@@ -107,44 +114,43 @@
       <img
         class="shape-small"
         src="./assets/img/shape_small.png"
-        alt="decorative shape"
-      />
+        alt
+        aria-hidden="true" />
 
       <!-- img-mobil-Left -->
 
       <img
         class="small-mobil"
         src="./assets/img/small-mobil.png"
-        alt="decorative mobile shape"
-      />
+        alt
+        aria-hidden="true" />
 
       <!-- image-container -->
 
       <div class="image-container">
-        <img src="./assets/svg/ellipse-4.svg" alt="icon" class="image1" />
-        <img src="./assets/svg/ellipse-5.svg" alt="icon" class="image2" />
+        <img src="./assets/svg/ellipse-4.svg" alt aria-hidden="true"
+          class="image1" />
+        <img src="./assets/svg/ellipse-5.svg" alt aria-hidden="true"
+          class="image2" />
         <p class="start-text">START</p>
       </div>
 
       <!-- about-container -->
 
-      <div class="about-container">
+      <section class="about-container" id="about" aria-labelledby="about-title">
         <div class="about-images">
           <img
             class="img-main"
             src="./assets/img/about-1.png"
-            alt="about image"
-          />
+            alt="about image" />
           <img
             class="img-main-mobil"
             src="./assets/img/about-mobil-1.png"
-            alt="about image mobil"
-          />
+            alt="about image mobil" />
           <img
             class="img-overlay"
             src="./assets/img/rectangle-1.png"
-            alt="rectangle"
-          />
+            alt="rectangle" />
 
           <div class="stat">
             <h2>2.500+</h2>
@@ -153,7 +159,7 @@
         </div>
 
         <div class="about-content">
-          <h1>Machines With Future Technology</h1>
+          <h2 id="about-title">Machines With Future Technology</h2>
           <p>
             See the future with high-performance electric cars produced by
             renowned brands. They feature futuristic builds and designs with new
@@ -165,17 +171,18 @@
         <img
           class="shape-small-short"
           src="./assets/img/shape-small.png"
-          alt="shape"
-        />
-      </div>
-    </nav>
+          alt="shape" />
+      </section>
+    </section>
 
     <!--  main  -->
 
     <main>
       <!-- text-top -->
 
-      <h1 class="text-top">Choose Your Electric Car Of The Porsche Brand</h1>
+      <h2 class="text-top" id="popular">
+        Choose Your Electric Car Of The Porsche Brand
+      </h2>
 
       <!-- cars -->
 
@@ -183,14 +190,13 @@
         <!-- car-card-->
 
         <div class="car-card">
-          <h1>Porsche</h1>
+          <h3>Porsche</h3>
           <p>Turbo S</p>
 
           <img
             class="car-brand"
             src="./assets/img/brand-box.png"
-            alt="Porsche Turbo S luxury car"
-          />
+            alt="Porsche Turbo S luxury car" />
 
           <div class="car-specs">
             <div class="spec">
@@ -217,7 +223,7 @@
         <!-- car-card-->
 
         <div class="car-card">
-          <h1>Porsche</h1>
+          <h3>Porsche</h3>
           <p>Turbo S</p>
 
           <img class="car-brand" src="./assets/img/brand-box.png" alt="img" />
@@ -247,7 +253,7 @@
         <!-- car-card-->
 
         <div class="car-card">
-          <h1>Porsche</h1>
+          <h3>Porsche</h3>
           <p>Turbo S</p>
 
           <img class="car-brand" src="./assets/img/brand-box.png" alt="img" />
@@ -277,7 +283,7 @@
         <!-- car-card-->
 
         <div class="car-card">
-          <h1>Porsche</h1>
+          <h3>Porsche</h3>
           <p>Turbo S</p>
 
           <img class="car-brand" src="./assets/img/brand-box.png" alt="img" />
@@ -307,7 +313,7 @@
         <!-- car-card-->
 
         <div class="car-card">
-          <h1>Porsche</h1>
+          <h3>Porsche</h3>
           <p>Turbo S</p>
 
           <img class="car-brand" src="./assets/img/brand-box.png" alt="img" />
@@ -337,14 +343,13 @@
         <!-- car-card-->
 
         <div class="car-card">
-          <h1>Porsche</h1>
+          <h3>Porsche</h3>
           <p>Taycan</p>
 
           <img
             class="car-brand"
             src="./assets/img/porsche-Taycan-1.png"
-            alt="Porsche Taycan luxury car"
-          />
+            alt="Porsche Taycan luxury car" />
 
           <div class="car-specs">
             <div class="spec">
@@ -371,14 +376,13 @@
         <!-- car-card-->
 
         <div class="car-card">
-          <h1>Porsche</h1>
+          <h3>Porsche</h3>
           <p>Turbo S Cross</p>
 
           <img
             class="car-brand"
             src="./assets/img/brand3.png"
-            alt="Porsche Turbo S Cross luxury car"
-          />
+            alt="Porsche Turbo S Cross luxury car" />
 
           <div class="car-specs">
             <div class="spec">
@@ -405,14 +409,13 @@
         <!-- car-card-->
 
         <div class="car-card">
-          <h1>Porsche</h1>
+          <h3>Porsche</h3>
           <p>Cayman</p>
 
           <img
             class="car-brand"
             src="./assets/img/brand5.png"
-            alt="Porsche Cayman luxury car"
-          />
+            alt="Porsche Cayman luxury car" />
 
           <div class="car-specs">
             <div class="spec">
@@ -439,14 +442,13 @@
         <!-- car-card-->
 
         <div class="car-card">
-          <h1>Porsche</h1>
+          <h3>Porsche</h3>
           <p>Boxster 718</p>
 
           <img
             class="car-brand"
             src="./assets/img/brand4.png"
-            alt="Porsche Boxster 718 luxury car"
-          />
+            alt="Porsche Boxster 718 luxury car" />
 
           <div class="car-specs">
             <div class="spec">
@@ -477,23 +479,20 @@
         <img
           class="indicator"
           src="./assets/svg/car-popular-indicator.svg"
-          alt="popular features indicator"
-        />
+          alt="popular features indicator" />
         <img
           class="desktop"
           src="./assets/img/features.png"
-          alt="popular car features"
-        />
+          alt="popular car features" />
         <img
           class="mobile"
           src="./assets/img/features-Mobil.png"
-          alt="popular car features mobile"
-        />
+          alt="popular car features mobile" />
       </div>
 
       <!-- featured-cars -->
 
-      <div class="featured-cars">
+      <div class="featured-cars" id="featured">
         <h2>Featured Luxury Cars</h2>
         <div class="filter-icons">
           <img src="./assets/svg/filter-1.svg" alt="icon" />
@@ -506,7 +505,7 @@
 
     <!-- section -->
 
-    <section>
+    <section id="offers" aria-labelledby="offers-title">
       <!-- boxes -->
 
       <div class="boxes">
@@ -519,8 +518,7 @@
           <img
             class="box-card__image"
             src="./assets/img/featured1.png"
-            alt="Tesla Model X luxury car"
-          />
+            alt="Tesla Model X luxury car" />
           <img class="shape-back" src="./assets/img/shape-back.png" alt="img" />
 
           <div class="box-card__footer">
@@ -528,8 +526,7 @@
             <img
               class="box-card__icon"
               src="./assets/svg/vector-9.svg"
-              alt="icon"
-            />
+              alt="icon" />
           </div>
         </div>
 
@@ -542,21 +539,18 @@
           <img
             class="box-card__image"
             src="./assets/img/featured2.png"
-            alt="Tesla Model 3 luxury car"
-          />
+            alt="Tesla Model 3 luxury car" />
           <img
             class="shape-back"
             src="./assets/img/shape-back.png"
-            alt="decorative shape"
-          />
+            alt="decorative shape" />
 
           <div class="box-card__footer">
             <h2 class="box-card__price">$45,900</h2>
             <img
               class="box-card__icon"
               src="./assets/svg/vector-9.svg"
-              alt="icon"
-            />
+              alt="icon" />
           </div>
         </div>
 
@@ -569,21 +563,18 @@
           <img
             class="box-card__image"
             src="./assets/img/featured3.png"
-            alt="Audi E-tron luxury car"
-          />
+            alt="Audi E-tron luxury car" />
           <img
             class="shape-back"
             src="./assets/img/shape-back.png"
-            alt="decorative shape"
-          />
+            alt="decorative shape" />
 
           <div class="box-card__footer">
             <h2 class="box-card__price">$175,900</h2>
             <img
               class="box-card__icon"
               src="./assets/svg/vector-9.svg"
-              alt="icon"
-            />
+              alt="icon" />
           </div>
         </div>
 
@@ -596,21 +587,18 @@
           <img
             class="box-card__image"
             src="./assets/img/featured5.png"
-            alt="Porsche Boxster 987 luxury car"
-          />
+            alt="Porsche Boxster 987 luxury car" />
           <img
             class="shape-back"
             src="./assets/img/shape-back.png"
-            alt="decorative shape"
-          />
+            alt="decorative shape" />
 
           <div class="box-card__footer">
             <h2 class="box-card__price">$126,900</h2>
             <img
               class="box-card__icon"
               src="./assets/svg/vector-9.svg"
-              alt="icon"
-            />
+              alt="icon" />
           </div>
         </div>
 
@@ -623,21 +611,18 @@
           <img
             class="box-card__image"
             src="./assets/img/featured6.png"
-            alt="Porsche Panamera luxury car"
-          />
+            alt="Porsche Panamera luxury car" />
           <img
             class="shape-back"
             src="./assets/img/shape-back.png"
-            alt="decorative shape"
-          />
+            alt="decorative shape" />
 
           <div class="box-card__footer">
             <h2 class="box-card__price">$126,900</h2>
             <img
               class="box-card__icon"
               src="./assets/svg/vector-9.svg"
-              alt="icon"
-            />
+              alt="icon" />
           </div>
         </div>
       </div>
@@ -648,17 +633,15 @@
         <img
           class="img body"
           src="./assets/img/subscribe-bg.png"
-          alt="subscribe background decoration"
-        />
+          alt="subscribe background decoration" />
         <img
           class="img-body-mobile"
           src="./assets/img/subscribe-bg-mobile.png"
-          alt="subscribe background decoration mobile"
-        />
+          alt="subscribe background decoration mobile" />
 
         <div class="offer__container">
           <div class="offer__content">
-            <h2 class="offer__title">
+            <h2 class="offer__title" id="offers-title">
               Do You Want To Receive <br />
               Special Offers?
             </h2>
@@ -675,13 +658,11 @@
             <img
               class="subscribe"
               src="./assets/img/subscribe-1.png"
-              alt="car subscription offer image"
-            />
+              alt="car subscription offer image" />
             <img
               class="subscribe-mobile"
               src="./assets/img/subscribe-mobile.png"
-              alt="car subscription offer image mobile"
-            />
+              alt="car subscription offer image mobile" />
           </div>
         </div>
       </div>
@@ -704,8 +685,7 @@
       <img
         class="shape-top"
         src="./assets/img/shape-2.png"
-        alt="decorative footer shape"
-      />
+        alt="decorative footer shape" />
 
       <div class="end-container">
         <div class="brand-block">
@@ -721,18 +701,18 @@
         <div class="links-wrapper">
           <div class="links-col">
             <h2>Company</h2>
-            <p>About</p>
-            <p>Cars</p>
-            <p>History</p>
-            <p>Shop</p>
+            <a href="#about">About</a>
+            <a href="#popular">Cars</a>
+            <a href="#home">History</a>
+            <a href="#featured">Shop</a>
           </div>
 
           <div class="links-col">
             <h2>Information</h2>
-            <p>Request a quote</p>
-            <p>Find a dealer</p>
-            <p>Contact us</p>
-            <p>Services</p>
+            <a href="#offers">Request a quote</a>
+            <a href="#featured">Find a dealer</a>
+            <a href="#home">Contact us</a>
+            <a href="#about">Services</a>
           </div>
 
           <div class="links-col">
@@ -746,8 +726,7 @@
           <img
             class="shape-right"
             src="./assets/img/shape-mobile.png"
-            alt="img"
-          />
+            alt="img" />
           <img class="shape-left" src="./assets/img/shape25.png" alt="img" />
         </div>
       </div>
