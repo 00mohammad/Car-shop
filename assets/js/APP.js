@@ -6,4 +6,3 @@ hamburger?.addEventListener("click", () => {
   menuOpen = !menuOpen;
   headerLinks.style.display = menuOpen ? "flex" : "none";
 });
-
