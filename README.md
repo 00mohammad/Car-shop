@@ -2,6 +2,11 @@
 
 Elecar is a responsive electric car showcase built with HTML, CSS, and vanilla JavaScript. This frontend portfolio project features a modern automotive layout with vehicle listings, promotional sections, brand logos, and responsive navigation.
 
+## 🎨 Design
+
+🔗 Figma Design  
+https://www.figma.com/design/MXqnlCWUwEngNeBlEXZy7p/Figma-Design-Responsive-car-website--Community-?t=ANHyHu8PXBvGjg6L-0
+
 ## Features
 
 - Responsive layouts for desktop, tablet, and mobile devices
