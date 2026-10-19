@@ -1,5 +1,5 @@
 body {
-  font-family: "Poppins", "Exo", sans-serif;
+  font-family: "Poppins", Arial, sans-serif;
   background-color: var(--body-color);
   color: var(--white-color);
   margin: 0;
@@ -12,54 +12,6 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-/*  **Fonts**   */
-
-/*  Poppins Font  */
-
-@font-face {
-  font-family: "Poppins";
-  src: url("../font/Poppins-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Poppins";
-  src: url("../font/Poppins-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Poppins";
-  src: url("../font/Poppins-SemiBold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-/*   **Fonts**  */
-
-/*  Exo Font  */
-
-@font-face {
-  font-family: "Exo";
-  src: url("../font/Exo-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Exo";
-  src: url("../font/Exo-SemiBold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
 }
 
 /*  colors  */
@@ -128,7 +80,7 @@ header {
   color: var(--white-color);
   text-decoration: none;
   font-size: 16px;
-  font-family: "Poppins";
+  font-family: "Poppins", Arial, sans-serif;
   text-transform: uppercase;
   transition: color 100ms ease-in-out;
 }
@@ -197,13 +149,13 @@ nav {
 }
 
 .hero-title {
-  font-family: "Exo";
+  font-family: "Exo", Arial, sans-serif;
   font-weight: 600;
   font-size: 3rem;
 }
 
 .hero-subtitle {
-  font-family: "Exo";
+  font-family: "Exo", Arial, sans-serif;
   font-weight: 600;
   font-size: 2rem;
   margin: 0;
@@ -238,7 +190,7 @@ nav {
 
 .item h2 {
   margin: 0;
-  font-family: "Exo";
+  font-family: "Exo", Arial, sans-serif;
   font-weight: 600;
   font-size: 1.5rem;
 }
@@ -399,7 +351,7 @@ main {
   margin-left: 40%;
   font-size: 1.5rem;
   text-align: center;
-  font-family: "Exo";
+  font-family: "Exo", Arial, sans-serif;
   font-weight: 500;
 }
 
@@ -422,7 +374,7 @@ main {
   background: var(--body-color);
   color: var(--white-color);
   overflow: hidden;
-  font-family: "Exo";
+  font-family: "Exo", Arial, sans-serif;
   background-image: url(../img/shape-back.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -701,7 +653,7 @@ main {
 
 .site-end {
   color: var(--white-color);
-  font-family: "Exo";
+  font-family: "Exo", Arial, sans-serif;
   padding: 60px 20px 0px;
   position: relative;
 }

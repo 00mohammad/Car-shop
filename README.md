@@ -7,7 +7,7 @@ Elecar is a responsive electric-car showcase built as a focused, static frontend
 - Responsive desktop, tablet, and mobile layouts
 - Mobile navigation toggle with keyboard-accessible controls
 - Hero, about, popular cars, featured cars, offers, brands, and footer sections
-- Local Poppins and Exo font assets
+- Poppins and Exo typography served by Google Fonts, with system-font fallbacks
 - Local image and SVG assets with responsive variants
 
 ## Technologies
@@ -36,7 +36,6 @@ The layout adapts across mobile, tablet, and desktop viewport sizes. Dedicated m
 ├── index.html
 ├── assets/
 │   ├── css/      # Main and responsive stylesheets
-│   ├── font/     # Local Poppins and Exo fonts
 │   ├── img/      # Raster and responsive image assets
 │   ├── js/       # Navigation behavior
 │   └── svg/      # Icons and brand artwork
