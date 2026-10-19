@@ -1,58 +1,93 @@
-# Car-Shop / Elecar
+# Car-Shop | Elecar
 
-Elecar is a responsive electric-car showcase built as a focused, static frontend portfolio project. It presents a hero vehicle, Porsche listings, featured cars, promotional content, brand marks, and a responsive navigation menu while preserving the supplied visual design.
+Elecar is a responsive electric car showcase built with HTML, CSS, and vanilla JavaScript. This frontend portfolio project features a modern automotive layout with vehicle listings, promotional sections, brand logos, and responsive navigation.
 
 ## Features
 
-- Responsive desktop, tablet, and mobile layouts
-- Mobile navigation toggle with keyboard-accessible controls
-- Hero, about, popular cars, featured cars, offers, brands, and footer sections
-- Poppins and Exo typography served by Google Fonts, with system-font fallbacks
-- Local image and SVG assets with responsive variants
+- Responsive layouts for desktop, tablet, and mobile devices
+- Interactive mobile navigation menu
+- Hero section featuring an electric vehicle
+- About, popular cars, featured cars, and promotional sections
+- Brand showcase and footer
+- Google Fonts integration using Poppins and Exo, with system-font fallbacks
+- Local image and SVG assets, including responsive image variants
 
 ## Technologies
 
-- Semantic HTML5
-- CSS3 (Flexbox, Grid, media queries, and custom properties)
-- Vanilla JavaScript
+- **HTML5** — Semantic page structure
+- **CSS3** — Flexbox, Grid, media queries, and custom properties
+- **JavaScript** — Interactive navigation
+- **Google Fonts** — Poppins and Exo typography
+- **GitHub Pages** — Project deployment
 
-## Responsive design
+## Responsive Design
 
-The layout adapts across mobile, tablet, and desktop viewport sizes. Dedicated mobile image variants are retained for the hero, about, feature, and offer areas where the original design uses them.
+The layout adapts to mobile, tablet, and desktop screen sizes. Responsive image variants are used in selected sections to support the original design across different viewports.
 
-## Live demo
+## Live Demo
 
-[Open the Elecar demo](https://00mohammad.github.io/Car-shop/)
+**[View the Live Demo](https://00mohammad.github.io/Car-shop/)**
 
 ## Screenshots
 
-![Desktop design](./assets/Design/Desktop%20x%201024%20-%20%20Responsive%20car%20website.png)
-![Mobile design](./assets/Design/Movil%20x%2024%20-%20Responsive%20car%20website.png)
+### Desktop
 
-## Project structure
+![Elecar desktop design](./assets/Design/Desktop%20x%201024%20-%20%20Responsive%20car%20website.png)
+
+### Mobile
+
+![Elecar mobile design](./assets/Design/Movil%20x%2024%20-%20Responsive%20car%20website.png)
+
+## Project Structure
 
 ```text
-.
-├── index.html
+Car-shop/
 ├── assets/
-│   ├── css/      # Main and responsive stylesheets
-│   ├── img/      # Raster and responsive image assets
-│   ├── js/       # Navigation behavior
-│   └── svg/      # Icons and brand artwork
+│   ├── css/
+│   │   ├── Style.css
+│   │   └── Media.css
+│   ├── img/
+│   ├── js/
+│   ├── svg/
+│   └── Design/
+├── index.html
 ├── DEMO.md
 └── README.md
 ```
 
-## Run locally
+## Run Locally
 
-Because this is a static site, no dependency installation is required. From the project root, run:
+This is a static frontend project and does not require package installation.
 
-```bash
-python -m http.server 8000
-```
+1. Clone the repository:
 
-Then open <http://localhost:8000> in a browser.
+   ```bash
+   git clone https://github.com/00mohammad/Car-shop.git
+   ```
+
+2. Open the project directory:
+
+   ```bash
+   cd Car-shop
+   ```
+
+3. Start a local server:
+
+   ```bash
+   python -m http.server 8000
+   ```
+
+4. Open [http://localhost:8000](http://localhost:8000/) in your browser.
+
+You can also use the **Live Server** extension in Visual Studio Code.
 
 ## Repository
 
-<https://github.com/00mohammad/Car-shop>
+[GitHub Repository](https://github.com/00mohammad/Car-shop)
+
+## Author
+
+**Mohammad Honarmande**
+
+- [GitHub](https://github.com/00mohammad)
+- [LinkedIn](https://www.linkedin.com/in/mohammad-honarmande-62ab39343/)
