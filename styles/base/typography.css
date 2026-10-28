@@ -1,0 +1,27 @@
+h1,
+h2,
+h3,
+.hero-title,
+.hero-subtitle,
+.offer__title,
+.brand-block h2,
+.links-col h2 {
+  font-family: "Exo", Arial, sans-serif;
+}
+
+.hero-title {
+  font-weight: 600;
+  font-size: clamp(2.2rem, 4vw, 3.5rem);
+}
+
+.hero-subtitle {
+  font-weight: 600;
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+}
+
+.text-top,
+.featured-cars h2,
+.about-content h2,
+.offer__title {
+  letter-spacing: -0.03em;
+}

@@ -1,0 +1,16 @@
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  width: min(100%, var(--content-max-width));
+  margin: 0 auto;
+  padding: 8rem 2rem 5rem;
+  gap: 2rem;
+}
+
+.icon-cars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8rem;
+  margin: 10% 0 5%;
+}

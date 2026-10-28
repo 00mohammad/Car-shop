@@ -1,0 +1,85 @@
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.car-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--text-color);
+}
+
+.hero-title,
+.hero-subtitle {
+  margin: 0;
+}
+
+.items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 5rem;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.item > img {
+  margin-bottom: 2rem;
+}
+
+.item h2 {
+  margin: 0;
+  font-family: "Exo", Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.item > p {
+  margin: 0;
+  color: var(--text-color);
+}
+
+.shape-small {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(47%);
+}
+
+.image-container {
+  position: relative;
+  display: flex;
+  width: 150px;
+  height: 150px;
+  margin-top: 5rem;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.image1,
+.image2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 70%;
+  height: 70%;
+}
+
+.start-text {
+  position: absolute;
+  z-index: 1;
+  margin-right: 2.8rem;
+  margin-bottom: 2.5rem;
+}

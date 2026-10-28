@@ -1,0 +1,27 @@
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: var(--body-color);
+  color: var(--white-color);
+  line-height: 1.6;
+}
+
+main {
+  margin-top: -7rem;
+  background: var(--body-color);
+}
+
+section,
+footer,
+header {
+  position: relative;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--first-color);
+  outline-offset: 4px;
+}
+
+.hidden {
+  display: none !important;
+}
