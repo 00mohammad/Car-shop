@@ -1,0 +1,30 @@
+{
+  "name": "car-shop",
+  "version": "1.0.0",
+  "description": "Car-Shop is an advanced landing page project designed to showcase electric vehicles. Its primary goal is to preserve the original Elecar visual identity while improving code structure, file organization, CSS and JavaScript maintainability, and preparing the project for a future migration to React and Vite.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/00mohammad/Car-shop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/00mohammad/Car-shop/issues"
+  },
+  "homepage": "https://github.com/00mohammad/Car-shop#readme",
+  "devDependencies": {
+    "vite": "^8.3.5"
+  }
+}
