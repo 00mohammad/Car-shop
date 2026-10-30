@@ -25,12 +25,12 @@ The migration must preserve the existing design, core functionality, responsive 
 
 Organize stylesheets by responsibility:
 
-- `base/`: reset, design tokens, global styles, and typography.
-- `layout/`: shared page layout, header, and footer.
-- `components/`: reusable buttons, cards, and other interface elements.
-- `sections/`: styles specific to individual page sections.
-- `responsive.css`: responsive adjustments across breakpoints.
-- `main.css`: the main stylesheet entry point that imports the required CSS files.
+- `base/`: Reset, design tokens, global styles, and typography.
+- `layout/`: Shared page layout, header, and footer.
+- `components/`: Reusable buttons, cards, and other interface elements.
+- `sections/`: Styles specific to individual page sections.
+- `responsive.css`: Responsive adjustments across breakpoints.
+- `main.css`: The main stylesheet entry point that imports the required CSS files.
 
 Avoid duplicating rules or introducing unnecessary abstractions during the refactoring process.
 
@@ -40,9 +40,9 @@ Use native JavaScript modules to separate behavior into focused files.
 
 Suggested responsibilities include:
 
-- `main.js`: application entry point and module initialization.
-- `modules/navigation.js`: mobile navigation behavior.
-- Additional modules: sliders, filtering, or other interactions, if required by the existing application.
+- `main.js`: Application entry point and module initialization.
+- `modules/navigation.js`: Mobile navigation behavior.
+- Additional modules: Sliders, filtering, or other interactions, if required by the existing application.
 
 Each interaction should have a clear responsibility. Event listeners should be initialized predictably, and existing functionality should remain intact.
 
@@ -84,7 +84,7 @@ Car-shop/
 ├── .gitignore
 ├── package.json
 ├── package-lock.json
-├── vite.config.js
+├── vite.config.mjs
 ├── assets/
 │   ├── img/
 │   ├── svg/
@@ -174,14 +174,14 @@ This is an illustrative structure only. Real vehicle data and asset paths must c
 ### Stage 4: Migrate Styling
 
 - Preserve the existing CSS design system and responsive behavior.
-- Reuse the existing styles where practical.
+- Reuse existing styles where practical.
 - Decide whether to retain conventional CSS, introduce CSS Modules, or adopt another styling solution based on actual project needs.
 - Avoid migrating every stylesheet solely to adopt a new styling technique.
 - Verify that component styling does not introduce regressions.
 
 ### Stage 5: Migrate Interactive Features
 
-Reimplement the existing interactions using React where appropriate:
+Reimplement existing interactions using React where appropriate:
 
 - Mobile navigation
 - Menu visibility and toggle behavior
