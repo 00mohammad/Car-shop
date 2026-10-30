@@ -1,8 +1,8 @@
-# گزارش معماری و خط پایه پروژه
+# Project Architecture and Baseline Report
 
-## 1) وضعیت فعلی پروژه
+## 1. Current Project Status
 
-### ساختار فعلی
+### Current Structure
 
 ```text
 Car-shop/
@@ -22,62 +22,64 @@ Car-shop/
 └── .git
 ```
 
-### فناوری‌های تایید شده
+### Confirmed Technologies
 
-- HTML5 برای ساختار صفحه
-- CSS3 با Flexbox، Grid و media queries
-- JavaScript ویرایشی ساده و بدون ماژول‌سازی واقعی
+- HTML5 for page structure
+- CSS3 with Flexbox, Grid, and media queries
+- Basic JavaScript implemented without proper modularization
 - Google Fonts
-- فایل‌های محلی تصاویر و SVG
-- خروجی استاتیک برای GitHub Pages
+- Local image and SVG assets
+- Static deployment using GitHub Pages
 
-### عملکرد‌های موجود
+### Existing Features
 
-- هدر و ناوبری واکنش‌گرا
-- بخش hero با تصویر و آمارهای خودرو
-- بخش about
-- کارت‌های خودرو در بخش popular
-- بخش featured cars و grid کارت‌ها
-- فرم/بخش پیشنهاد ویژه و subscription
-- فوتر با لینک‌ها و شبکه‌های اجتماعی
+- Responsive header and navigation
+- Hero section featuring a car image and vehicle statistics
+- About section
+- Vehicle cards in the Popular section
+- Featured Cars section with a card grid
+- Special offers and subscription section
+- Footer with navigation links and social media links
 
-## 2) مشکلات تایید شده
+## 2. Confirmed Issues
 
-- فایل CSS در دو فایل بزرگ و نامنظم (`assets/css/Style.css` و `assets/css/Media.css`) نگهداری می‌شود.
-- کد JavaScript به‌صورت تک‌فایلی و ساده اجرا می‌شود و از ماژول‌سازی بهره نمی‌برد.
-- ساختار دایرکتوری به شکل حرفه‌ای سازماندهی نشده است.
-- مسیرها و نام‌گذاری‌ها در برخی بخش‌ها به‌صورت نامتوازن و مخلوط هستند.
-- دسترسی‌پذیری و ساختار اسکریپت به‌صورت محدود است و برای مهاجرت به React باید بهبود یابد.
+- CSS is maintained in two large, poorly organized files (`assets/css/Style.css` and `assets/css/Media.css`).
+- JavaScript is implemented as a single, basic file without a modular architecture.
+- The directory structure is not professionally organized.
+- File paths and naming conventions are inconsistent across some sections.
+- Accessibility and script architecture are limited and require improvement before a future migration to React.
 
-## 3) ریسک‌های بالقوه
+## 3. Potential Risks
 
-- تغییر ساختار فایل‌ها بدون مپ‌کردن مسیر قدیمی ممکن است منبع را خراب کند.
-- با گذاشتن فایل‌های قدیمی بدون مدیریت، ممکن است ریسک تکرار کد و ناسازگاری افزایش یابد.
-- اگر حتماً نیاز به refactor باشد، باید سبک بصری اصلی حفظ شود تا هویت Elecar از بین نرود.
-- برای آینده، ساختار فعلی برای React به‌خوبی آماده نیست، چون JS و CSS هنوز به هم چسبیده‌اند.
+- Restructuring files without mapping their previous paths may break existing functionality.
+- Keeping legacy files without proper management may increase the risk of duplicated code and compatibility issues.
+- If refactoring is necessary, the original visual style must be preserved to maintain the Elecar brand identity.
+- The current architecture is not well prepared for a future React migration because JavaScript and CSS responsibilities are not yet sufficiently separated.
 
-## 4) معماری پیشنهادی
+## 4. Proposed Architecture
 
-- `index.html` در ریشه باقی بماند تا سازگاری با deployment فعلی حفظ شود.
-- فایل‌های CSS به `styles/` منتقل شوند و به ترتیب: `base`, `layout`, `sections`, `components`, `responsive`.
-- فایل JavaScript اصلی به `scripts/main.js` و ماژول‌های جانبی به `scripts/modules/` منتقل شوند.
-- فایل‌های تصویر و SVG در `assets/` نگه داشته شوند تا نیازهای پروژه بدون تغییر باقی بماند.
+- Keep `index.html` in the project root to maintain compatibility with the current deployment setup.
+- Move CSS files into the `styles/` directory and organize them into the following categories: `base`, `layout`, `sections`, `components`, and `responsive`.
+- Move the main JavaScript file to `scripts/main.js` and supporting modules to `scripts/modules/`.
+- Keep image and SVG assets inside `assets/` to preserve the existing project asset structure and requirements.
 
-## 5) مراحل پیاده‌سازی
+## 5. Implementation Steps
 
-1. بازبینی ساختار واقعی و پایدارسازی مسیرها
-2. جداسازی CSS به واحدهای مسئولیت‌محور
-3. ماژول‌سازی JavaScript برای ناوبری و تعامل‌ها
-4. به‌روزرسانی لینک‌ها و ارجاع‌ها در HTML
-5. ثبت مستندات معماری و نقشه مهاجرت به React
+1. Review the actual project structure and stabilize file paths.
+2. Separate CSS into responsibility-based modules.
+3. Modularize JavaScript for navigation and interactive functionality.
+4. Update HTML references and file imports.
+5. Document the architecture and create a React migration roadmap.
 
-## 6) نقشه مسیر فایل‌های قدیمی به جدید
+## 6. Legacy-to-New File Mapping
 
-- `assets/css/Style.css` → `styles/main.css` + فایل‌های جزئی در `styles/`
+- `assets/css/Style.css` → `styles/main.css` + individual files within `styles/`
 - `assets/css/Media.css` → `styles/responsive.css`
-- `assets/js/APP.js` → `scripts/main.js` و `scripts/modules/navigation.js`
-- `index.html` → در ریشه حفظ می‌شود، اما به فایل‌های جدید CSS و JS اشاره می‌کند
+- `assets/js/APP.js` → `scripts/main.js` and `scripts/modules/navigation.js`
+- `index.html` → Remains in the project root but references the new CSS and JavaScript files.
 
-## 7) جمع‌بندی
+## 7. Conclusion
 
-پروژه در وضعیت استاتیک و قابل اجرا قرار دارد، اما برای تبدیل شدن به یک پروژه حرفه‌ای با امکان مهاجرت به React، نیاز به جداسازی مسئولیت‌ها، نام‌گذاری سازگار و مستندات دقیق دارد. پیاده‌سازی فعلی در چارچوب این گزارش انجام شده است تا ساختار قابل فهم‌تری برای توسعه آینده فراهم شود.
+The project is currently in a functional static state. However, to evolve into a professionally structured project that supports a future migration to React, it requires better separation of responsibilities, consistent naming conventions, and accurate documentation.
+
+The implementation has been carried out within the scope of this report to establish a clearer, more maintainable architecture and provide a solid foundation for future development.

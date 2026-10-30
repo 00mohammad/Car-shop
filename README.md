@@ -1,31 +1,32 @@
 # Car-Shop | Elecar
 
-این پروژه یک نمونه‌ی صفحه‌فرود پیشرفته برای نمایش خودروهای برقی است. هدف اصلی، حفظ هویت بصری اصلی Elecar و هم‌زمان بهبود ساختار کدنویسی، سازمان‌دهی فایل‌ها، قابل‌فهم‌تر شدن CSS و JS، و آماده‌سازی برای مهاجرت آینده به React و Vite است.
+Car-Shop is an advanced landing page project designed to showcase electric vehicles. Its primary goal is to preserve the original Elecar visual identity while improving code structure, file organization, CSS and JavaScript maintainability, and preparing the project for a future migration to React and Vite.
 
-## طراحی
+## Design
 
-🔗 طرح اولیه در Figma  
-https://www.figma.com/design/MXqnlCWUwEngNeBlEXZy7p/Figma-Design-Responsive-car-website--Community-?t=ANHyHu8PXBvGjg6L-0
+🔗 **Original Figma Design**
 
-## ویژگی‌ها
+[View the Original Figma Design](https://www.figma.com/design/MXqnlCWUwEngNeBlEXZy7p/Figma-Design-Responsive-car-website--Community-?t=ANHyHu8PXBvGjg6L-0)
 
-- ساختار واکنش‌گرا برای دسکتاپ، تبلت و موبایل
-- منوی موبایل با تعامل زنده
-- بخش hero با خودرو و آمارهای مرتبط
-- بخش‌های about، popular، featured و پیشنهاد ویژه
-- نمایش برندها و فوتر پروژه
-- استفاده از Google Fonts و فایل‌های محلی SVG/تصویر
-- آماده‌سازی برای مهاجرت به معماری React در آینده
+## Features
 
-## فناوری‌ها
+- Responsive layout for desktop, tablet, and mobile devices
+- Interactive mobile navigation menu
+- Hero section featuring a vehicle and related statistics
+- About, Popular, Featured, and Special Offers sections
+- Brand showcase and project footer
+- Google Fonts and locally stored SVG and image assets
+- Architecture prepared for a future migration to React
+
+## Technologies
 
 - HTML5
-- CSS3 با Flexbox، Grid و media queries
-- JavaScript مدرن و ماژول‌محور
+- CSS3 with Flexbox, Grid, and media queries
+- Modern, modular JavaScript
 - Google Fonts
-- GitHub Pages برای استقرار
+- GitHub Pages for deployment
 
-## ساختار پروژه
+## Project Structure
 
 ```text
 Car-shop/
@@ -51,60 +52,49 @@ Car-shop/
 │   ├── architecture.md
 │   └── react-migration-plan.md
 ├── DEMO.md
-└── .git
+└── .git/
 ```
 
-## گزارش خط پایه
+## Baseline Report
 
-- ساختار فعلی پروژه در مدل استاتیک برای نمایش فروشگاه خودروهای الکتریکی آماده است.
-- فایل CSS به دو بخش اصلی تقسیم شده بود و برای نگهداری حرفه‌ای باید به ماژول‌های منطقی شکسته شود.
-- JavaScript فعلی برای ناوبری ساده است و به‌صورت ماژول‌محور درآورده نشده است.
-- پروژه از نظر عملکرد پایه سالم است، اما برای توسعهٔ آینده نیاز به ساختار بهتر و مستندات دقیق دارد.
+- The current project structure is prepared as a static website for showcasing an electric vehicle platform.
+- The original CSS was maintained in two main files and needed to be divided into logical modules for better maintainability.
+- The original JavaScript handled basic navigation and had not yet been organized into a modular architecture.
+- The project was functionally sound at a basic level but required a more structured architecture and detailed documentation to support future development.
 
-## اجرای محلی
+## Local Development
 
-پروژه یک پروژه استاتیک است و نصب وابستگی لازم ندارد.
+This is a static project and does not require dependency installation.
 
-1. کلون کردن مخزن:
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/00mohammad/Car-shop.git
 ```
 
-2. ورود به پوشه:
+### 2. Navigate to the Project Directory
 
 ```bash
 cd Car-shop
 ```
 
-3. اجرای سرور محلی:
+### 3. Start a Local Server
 
 ```bash
 python -m http.server 8000
 ```
 
-4. باز کردن لینک:
+### 4. Open in Your Browser
 
 ```text
 http://localhost:8000/
 ```
 
-## مستندات فنی
+## Technical Documentation
 
-- [docs/architecture.md](./docs/architecture.md)
-- [docs/react-migration-plan.md](./docs/react-migration-plan.md)
+- [Architecture Documentation](./docs/architecture.md)
+- [React Migration Plan](./docs/react-migration-plan.md)
 
-## دمو
+## Live Demo
 
-**[مشاهده نسخه زنده](https://00mohammad.github.io/Car-shop/)**
-
-## مخزن GitHub
-
-[GitHub Repository](https://github.com/00mohammad/Car-shop)
-
-## نویسنده
-
-**Mohammad Honarmande**
-
-- [GitHub](https://github.com/00mohammad)
-- [LinkedIn](https://www.linkedin.com/in/mohammad-honarmande-62ab39343/)
+\*\*[View Live Demo](https://00mohammad.github.io

@@ -1,32 +1,32 @@
-# برنامه مهاجرت به React و Vite
+# React and Vite Migration Plan
 
-## هدف
+## Objective
 
-پروژه فعلی با HTML، CSS و JavaScript خام ساخته شده است. هدف این سند، آماده‌سازی پروژه برای مهاجرت آرام و ایمن به React و Vite در فاز دوم است؛ بدون تغییر دادن نوع تکنولوژی در حال حاضر.
+The current project is built with plain HTML, CSS, and JavaScript. The purpose of this document is to prepare the project for a gradual and safe migration to React and Vite in Phase 2, without changing the technology stack at this stage.
 
-## اصول راهنما
+## Guiding Principles
 
-- حفظ هویت بصری Elecar
-- جداسازی مسئولیت‌ها بر اساس دامنه و بخش‌ها
-- کاهش وابستگی به ساختار تگی‌تگ و inline styling
-- آماده‌سازی داده‌ها و سایزهای کد برای انتقال به کامپوننت‌ها
+- Preserve the Elecar visual identity.
+- Separate responsibilities based on project domains and sections.
+- Reduce dependency on deeply nested markup and inline styling.
+- Prepare data structures and code components for future conversion into reusable components.
 
-## 1) آماده‌سازی ساختار فعلی
+## 1. Preparing the Current Structure
 
-### باید انجام شود
+### What Should Be Done
 
-- CSSها به ماژول‌های منطقی تقسیم شوند.
-- JavaScript به ماژول‌های مستقل تبدیل شود.
-- بخش‌های اصلی صفحه مانند hero، about، popular، featured و offers به‌صورت قابل تشخیص از هم جدا شوند.
-- نام‌گذاری کلاس‌ها و بخش‌ها از حالت ساختاری و تکراری به حالت کاملاً معنایی نزدیک شود.
+- Divide CSS files into logical modules.
+- Convert JavaScript into independent modules.
+- Keep the main page sections, such as Hero, About, Popular, Featured, and Offers, clearly separated.
+- Move class and section naming conventions away from repetitive structural names toward more meaningful, semantic names.
 
-### نباید انجام شود
+### What Should Not Be Done
 
-- نصب React یا Vite در این مرحله
-- تبدیل فایل HTML به JSX
-- ایجاد abstraction‌های غیرضروری
+- Do not install React or Vite at this stage.
+- Do not convert HTML files into JSX.
+- Do not introduce unnecessary abstractions.
 
-## 2) پیشنهاد ساختار آینده
+## 2. Proposed Future Structure
 
 ```text
 Car-shop/
@@ -46,9 +46,9 @@ Car-shop/
 └── assets/
 ```
 
-## 3) نقشه تبدیل به React
+## 3. React Migration Roadmap
 
-### مرحله 1: استخراج کامپوننت‌ها
+### Stage 1: Component Extraction
 
 - `Header`
 - `Hero`
@@ -58,36 +58,36 @@ Car-shop/
 - `OfferSection`
 - `Footer`
 
-### مرحله 2: تبدیل داده‌ها به آرایه
+### Stage 2: Converting Data into Arrays
 
-همه اطلاعات خودروها، برندها و لینک‌ها باید به آرایه‌های داده‌ای تبدیل شوند تا در JSX به‌صورت مکرر تکرار نشوند.
+All vehicle information, brands, and links should be converted into data arrays to avoid repetitive markup in JSX.
 
-### مرحله 3: جایگزینی CSS سبک قدیمی
+### Stage 3: Replacing the Legacy CSS Approach
 
-- CSS اکسپرس‌نشده به CSS Modules یا styled-components/vanilla CSS در React منتقل شود.
-- کلاس‌های نام‌گذاری‌شده باید یک‌دست و حرفه‌ای شوند.
+- Existing CSS should be migrated to CSS Modules, styled-components, or vanilla CSS in React.
+- Class naming conventions should become consistent and professional.
 
-### مرحله 4: مهاجرت تعامل‌ها
+### Stage 4: Migrating Interactions
 
-- منو موبایل
-- focus management
-- تعامل‌های کلیک و نمایش/پنهان شدن
+- Mobile navigation menu
+- Focus management
+- Click interactions and show/hide functionality
 
-### مرحله 5: تنظیم Vite و ابزارها
+### Stage 5: Configuring Vite and Development Tools
 
-- ساخت پروژه به‌صورت Vite
-- افزودن ESLint و Prettier
-- تنظیم مسیرهای استاتیک و public assets
+- Set up the project using Vite.
+- Add ESLint and Prettier.
+- Configure static file paths and public assets.
 
-## 4) چک‌لیست قبل از مهاجرت
+## 4. Pre-Migration Checklist
 
-- [ ] ساختار CSS به‌صورت صفحه‌محور و کامپوننت‌محور سازماندهی شده باشد
-- [ ] کد JS ماژول‌محور باشد
-- [ ] نام‌گذاری‌ها قرارداد مشخصی داشته باشند
-- [ ] هویت بصری و رنگ‌ها حفظ شوند
-- [ ] تصاویر و SVGها متمرکز شده باشند
-- [ ] اسناد پروژه به‌روز باشند
+- [ ] CSS is organized by page sections and components.
+- [ ] JavaScript follows a modular architecture.
+- [ ] Naming conventions follow a consistent standard.
+- [ ] The original visual identity and color palette are preserved.
+- [ ] Images and SVG assets are centrally organized.
+- [ ] Project documentation is up to date.
 
-## 5) نتیجه
+## 5. Conclusion
 
-در فاز اول، تمرکز بر آماده‌سازی معماری و حذف هرزرویی‌های فنی است. در فاز دوم، با استفاده از React و Vite، می‌توان همان طراحی موجود را با ساختاری بهتر، کد تمیزتر و نگهداری آسان‌تر بازسازی کرد.
+In Phase 1, the focus is on preparing the architecture and eliminating technical inefficiencies. In Phase 2, React and Vite can be introduced to rebuild the existing design with a better architecture, cleaner code, and easier maintenance.
