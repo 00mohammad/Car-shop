@@ -4,6 +4,16 @@ A responsive electric vehicle landing page inspired by the original Elecar desig
 
 The codebase uses modular HTML, CSS, and JavaScript, with a structure designed to support future development and a potential migration to React.
 
+## Screenshots
+
+### Desktop Preview
+
+![Car-Shop Desktop Preview](./assets/Design/desktop-wireframe.png)
+
+### Mobile Preview
+
+![Car-Shop Mobile Preview](./assets/Design/mobile-wireframe.png)
+
 ## Design
 
 **Original Figma Design:**
@@ -151,7 +161,7 @@ export default defineConfig({
 
 This setting ensures that production asset paths match the repository's GitHub Pages URL.
 
-**Important:** Building the project locally does not automatically publish it. Configure GitHub Actions or another deployment workflow to build the project and publish the contents of `dist/` to GitHub Pages.
+> **Important:** Building the project locally does not automatically publish it. Configure GitHub Actions or another deployment workflow to build the project and publish the contents of `dist/` to GitHub Pages.
 
 ## Technical Documentation
 
