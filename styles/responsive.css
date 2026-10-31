@@ -1,22 +1,101 @@
-@media (max-width: 320px) {
-  .featured-cars h2 {
-    padding: 1.5rem;
+/* ========================================
+   Tablet & Small Laptop
+   ======================================== */
+
+@media (max-width: 1024px) {
+  /* Featured Cars */
+
+  .cars {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    padding: 0 2rem;
+    overflow-x: auto;
   }
 
-  .filter-icons {
-    margin-left: 1rem;
+  .car-card {
+    flex: 0 0 45%;
+    min-width: 20rem;
   }
 
-  .filter-icons img {
-    margin-right: 1rem;
+  .car-card:nth-child(3),
+  .car-card:nth-child(4) {
+    display: block;
+  }
+
+  /* Section Heading */
+
+  .text-top {
+    max-width: 95%;
+    margin: 10rem 0 4rem 2rem;
+    padding: 0.5rem;
+  }
+
+  /* Footer */
+
+  .links-wrapper {
+    margin-left: 0;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .links-col {
+    min-width: 0;
+    flex: 1 1 10rem;
+  }
+
+  .brand-text {
+    max-width: 24rem;
+    margin: 0;
+  }
+
+  .brand-block {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-left: 2%;
+    margin-bottom: -2%;
+  }
+
+  /* Car Icons */
+
+  .icon-cars {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 4rem;
+    margin: 54% 0 5%;
+  }
+
+  /* Decorative Shapes */
+
+  .shape-right {
+    display: block;
+    margin-top: -44rem;
+  }
+
+  .shape-left {
+    display: block;
+    margin-top: -35rem;
+    margin-right: -15%;
   }
 }
 
+/* ========================================
+   Mobile & Tablet
+   ======================================== */
+
 @media (max-width: 768px) {
+  /* Header */
+
   header {
     display: flex;
-    align-content: space-around;
     flex-wrap: wrap;
+    align-content: space-around;
     align-items: stretch;
   }
 
@@ -37,6 +116,7 @@
 
   .logo-img {
     width: 90px;
+    height: 2rem;
     margin: 0;
   }
 
@@ -44,10 +124,12 @@
     display: none;
   }
 
+  /* Mobile Navigation */
+
   .header-links {
     display: none;
     flex-basis: 100%;
-    background-color: rgba(255, 255, 255, 0.08);
+    background-color: var(--text-color-light);
   }
 
   .header-links.is-open {
@@ -59,8 +141,8 @@
 
   .header-links li {
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
   }
 
   .header-links a {
@@ -70,6 +152,12 @@
     font-size: 20px;
   }
 
+  .header-links a:hover,
+  .header-links li a:hover,
+  .header-links .header-cat-button:hover {
+    color: var(--first-color);
+  }
+
   .header-links .header-cat-button {
     margin: 0 0 20px;
     padding: 30px 16px;
@@ -77,7 +165,21 @@
     border-radius: 0;
   }
 
-  .shape-big {
+  /* Hero Section */
+
+  .hero-title {
+    margin-top: 10%;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .hero-subtitle {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+
+  .shape-big,
+  .shape-small {
     display: none;
   }
 
@@ -87,27 +189,16 @@
     margin-left: 32rem;
   }
 
-  .hero-title {
-    margin-top: 10%;
-  }
-
-  .hero-subtitle {
-    margin-top: 1rem;
-    font-size: 1rem;
-  }
-
-  .shape-small {
-    display: none;
-  }
-
   .small-mobil {
-    display: block;
     position: absolute;
     top: 50%;
     right: 0;
+    display: block;
     max-width: 90vw;
     height: auto;
   }
+
+  /* Home Section */
 
   .home {
     display: none;
@@ -121,9 +212,15 @@
     gap: clamp(1rem, 8vw, 2.5rem);
   }
 
+  /* About Section */
+
   .about-container {
+    display: flex;
     flex-direction: column;
-    padding: 3rem 1.25rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 1rem;
   }
 
   .about-images {
@@ -138,7 +235,12 @@
   .img-main-mobil {
     display: block;
     width: 100%;
+    max-width: 20rem;
     border-radius: var(--radius-md);
+  }
+
+  .shape-small-short {
+    display: none;
   }
 
   .stat {
@@ -146,55 +248,233 @@
     bottom: 20px;
   }
 
+  .stat h2 {
+    font-size: 22px;
+  }
+
+  .stat p {
+    margin-top: 0;
+    margin-right: 0;
+    color: var(--text-color);
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .img-overlay {
+    width: 13rem;
+  }
+
+  .about-content {
+    padding: 1rem;
+  }
+
+  .about-content h2 {
+    max-width: 90%;
+  }
+
+  .about-content p {
+    margin-top: 1rem;
+  }
+
+  /* Featured Cars */
+
   .text-top {
     max-width: 100%;
     margin: 2rem auto 0;
     padding: 1.5rem 1rem;
   }
 
+  .start-text {
+    margin-bottom: 3rem;
+  }
+
+  .car-info {
+    margin-bottom: 3rem;
+    font-size: 0.8rem;
+  }
+
+  .image-container {
+    margin-left: 5rem;
+  }
+
   .cars {
-    gap: 2rem;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    margin: 0;
+    padding: 1rem 0;
+  }
+
+  .cars::-webkit-scrollbar {
+    display: none;
+  }
+
+  .car-card {
+    flex: 0 0 90%;
+    min-width: 0;
+    margin: 0 5%;
+    scroll-snap-align: center;
+  }
+
+  .car-card:nth-child(1),
+  .car-card:nth-child(2) {
+    display: block;
+  }
+
+  /* General Cards */
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+    max-width: 100%;
+    height: auto;
   }
 
   .boxes {
-    grid-template-columns: 1fr;
-    padding: 4rem 1.5rem 3rem;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    margin-top: 3rem;
+    padding: 1rem;
   }
+
+  .box-card {
+    width: min(18rem, 100%);
+    margin-inline: auto;
+  }
+
+  /* Body Images */
+
+  .img.body {
+    display: none;
+  }
+
+  .img-body-mobile {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    display: block;
+    width: min(30rem, 100%);
+    max-width: 100%;
+  }
+
+  /* Offer Section */
 
   .offer__container {
+    display: flex;
     flex-direction: column;
-    padding: 2rem 1.25rem;
-  }
-
-  .offer__title {
-    font-size: clamp(1.6rem, 6vw, 2.5rem);
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 3rem 1rem;
     text-align: center;
   }
 
-  .icon-cars {
-    flex-wrap: wrap;
-    gap: 2rem 3rem;
-    padding: 0 1rem;
+  .offer__title {
+    font-size: 20px;
   }
+
+  .offer__desc {
+    font-size: 13px;
+  }
+
+  .offer__btn {
+    width: 60%;
+  }
+
+  .subscribe {
+    display: none;
+  }
+
+  .subscribe-mobile {
+    display: block;
+    max-width: 100%;
+  }
+
+  /* Footer */
 
   .links-wrapper {
+    display: flex;
     flex-direction: column;
-    margin-left: 0;
+    width: 100%;
     gap: 1.5rem;
+    margin-left: 0;
   }
 
-  .brand-block,
-  .brand-text {
+  .brand-block {
     margin-left: 0;
   }
 
   .brand-text {
+    max-width: 86%;
+    margin: 0;
+  }
+
+  .site-end {
+    padding: 0;
+  }
+
+  /* Decorative Shapes */
+
+  .shape-top,
+  .shape-bottom,
+  .shape-left,
+  .shape-right {
+    display: none;
+  }
+
+  .shape-top {
+    top: -40px;
+    left: -40px;
+    width: 260px;
+  }
+
+  .shape-bottom {
+    right: -40px;
+    bottom: -40px;
+    width: 260px;
+  }
+
+  .desktop {
     max-width: 100%;
-    margin-bottom: 0;
+    height: auto;
   }
 }
 
-@media (max-width: 960px) and (min-width: 769px) {
+/* ========================================
+   Small Mobile
+   ======================================== */
+
+@media (max-width: 320px) {
+  .featured-cars h2 {
+    padding: 1.5rem;
+  }
+
+  .filter-icons {
+    margin-left: 1rem;
+  }
+
+  .filter-icons img {
+    margin-right: 1rem;
+  }
+}
+
+
+/* ========================================
+   Tablet: 769px – 960px
+   ======================================== */
+
+@media (min-width: 769px) and (max-width: 960px) {
   .boxes {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
