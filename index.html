@@ -16,34 +16,21 @@
   </head>
 
   <body>
-    <!--  header  -->
-
+    <!-- ========== HEADER: logo + navigation only ========== -->
     <header>
-      <!-- logo -->
-
       <div class="logo">
-        <!-- img-Right -->
-
-        <img
-          class="shape-big"
-          src="./assets/img/hero-shape-big.png"
-          alt
-          aria-hidden="true" />
-        <img class="logo-img" src="./assets/img/elecar-logo.png"
-          alt="Elecar logo" />
-
-        <!-- img-mobil-Right -->
-
+        <img class="shape-big" src="./assets/img/hero-shape-big.png" alt />
+        <a href="#home">
+          <img class="logo-img" src="./assets/img/elecar-logo.png"
+            alt="Elecar logo" />
+        </a>
         <div class="img-mobil-Right">
           <img
             class="shape-big-mobil"
             src="./assets/img/hero-shape-big-mobile.png"
-            alt
-            aria-hidden="true" />
+            alt />
         </div>
       </div>
-
-      <!-- menu -->
 
       <button
         class="hamburger"
@@ -51,9 +38,9 @@
         aria-label="Toggle navigation"
         aria-controls="primary-navigation"
         aria-expanded="false">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </button>
 
       <nav aria-label="Primary navigation">
@@ -66,86 +53,63 @@
       </nav>
     </header>
 
-    <!--  nav  -->
+    <!-- ========== MAIN ========== -->
+    <main id="main">
+      <!-- Hero -->
+      <section id="home" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <h1 class="hero-title" id="hero-title">Choose The Best Car</h1>
+          <p class="hero-subtitle">Porsche Mission E</p>
 
-    <section id="home" aria-labelledby="hero-title">
-      <div class="hero-content">
-        <h1 class="hero-title" id="hero-title">Choose The Best Car</h1>
-        <p class="hero-subtitle">Porsche Mission E</p>
-        <div class="car-info">
+          <div class="car-info">
+            <img src="./assets/svg/electric-car-icon.svg" alt
+              class="car-icon" />
+            <p class="car-type">Electric car</p>
+          </div>
+
           <img
-            src="./assets/svg/electric-car-icon.svg"
+            class="home"
+            src="./assets/img/hero-car.png"
+            alt="Porsche Mission E hero car" />
+          <!-- Mobile duplicate: hidden from screen readers to avoid double announcement -->
+          <img
+            class="home-mobil"
+            src="./assets/img/hero-car-mobile.png"
             alt
-            aria-hidden="true"
-            class="car-icon" />
-          <p class="car-type">Electric car</p>
-        </div>
-        <img
-          class="home"
-          src="./assets/img/hero-car.png"
-          alt="Porsche Mission E hero car" />
-        <img
-          class="home-mobil"
-          src="./assets/img/hero-car-mobile.png"
-          alt="Porsche Mission E hero car mobile" />
-      </div>
-
-      <!-- items -->
-
-      <div class="items">
-        <!-- item -->
-
-        <div class="item">
-          <img src="./assets/svg/temperature-icon.svg" alt aria-hidden="true" />
-          <h2>24°</h2>
-          <p>TEMPERATURE</p>
+            aria-hidden="true" />
         </div>
 
-        <!-- item -->
+        <ul class="items">
+          <li class="item">
+            <img src="./assets/svg/temperature-icon.svg" alt />
+            <h2>24°</h2>
+            <p>TEMPERATURE</p>
+          </li>
+          <li class="item">
+            <img src="./assets/svg/mileage-icon.svg" alt />
+            <h2>873</h2>
+            <p>MILEAGE</p>
+          </li>
+          <li class="item">
+            <img src="./assets/svg/battery-icon.svg" alt />
+            <h2>94%</h2>
+            <p>BATTERY</p>
+          </li>
+        </ul>
 
-        <div class="item">
-          <img src="./assets/svg/mileage-icon.svg" alt aria-hidden="true" />
-          <h2>873</h2>
-          <p>MILEAGE</p>
+        <img class="shape-small" src="./assets/img/hero-shape-small-alt.png"
+          alt />
+        <img class="small-mobil" src="./assets/img/hero-shape-small-mobile.png"
+          alt />
+
+        <div class="image-container">
+          <img src="./assets/svg/hero-ring-inner.svg" alt class="image1" />
+          <img src="./assets/svg/hero-ring-outer.svg" alt class="image2" />
+          <p class="start-text">START</p>
         </div>
+      </section>
 
-        <!-- item -->
-
-        <div class="item">
-          <img src="./assets/svg/battery-icon.svg" alt aria-hidden="true" />
-          <h2>94%</h2>
-          <p>BATTERY</p>
-        </div>
-      </div>
-
-      <!-- img Left -->
-
-      <img
-        class="shape-small"
-        src="./assets/img/hero-shape-small-alt.png"
-        alt
-        aria-hidden="true" />
-
-      <!-- img-mobil-Left -->
-
-      <img
-        class="small-mobil"
-        src="./assets/img/hero-shape-small-mobile.png"
-        alt
-        aria-hidden="true" />
-
-      <!-- image-container -->
-
-      <div class="image-container">
-        <img src="./assets/svg/hero-ring-inner.svg" alt aria-hidden="true"
-          class="image1" />
-        <img src="./assets/svg/hero-ring-outer.svg" alt aria-hidden="true"
-          class="image2" />
-        <p class="start-text">START</p>
-      </div>
-
-      <!-- about-container -->
-
+      <!-- About -->
       <section class="about-container" id="about" aria-labelledby="about-title">
         <div class="about-images">
           <img
@@ -155,14 +119,13 @@
           <img
             class="img-main-mobil"
             src="./assets/img/about-interior-mobile.png"
-            alt="Interior of an electric car" />
-          <img
-            class="img-overlay"
-            src="./assets/img/about-overlay-card.png"
-            alt aria-hidden="true" />
+            alt
+            aria-hidden="true" />
+          <img class="img-overlay" src="./assets/img/about-overlay-card.png"
+            alt />
 
           <div class="stat">
-            <h2>2.500+</h2>
+            <h3>2.500+</h3>
             <p>Supercharges placed along popular routes</p>
           </div>
         </div>
@@ -171,565 +134,434 @@
           <h2 id="about-title">Machines With Future Technology</h2>
           <p>
             See the future with high-performance electric cars produced by
-            renowned brands. They feature futuristic builds and designs with new
-            and innovative platforms that last a long time.
+            renowned brands. They feature futuristic builds and designs with
+            new and innovative platforms that last a long time.
           </p>
           <button type="button">Know more</button>
         </div>
 
-        <img
-          class="shape-small-short"
-          src="./assets/img/hero-shape-small.png"
-          alt aria-hidden="true" />
+        <img class="shape-small-short" src="./assets/img/hero-shape-small.png"
+          alt />
       </section>
-    </section>
 
-    <!--  main  -->
+      <!-- Popular cars -->
+      <section id="popular" aria-labelledby="popular-title">
+        <h2 class="text-top" id="popular-title">
+          Choose Your Electric Car Of The Porsche Brand
+        </h2>
 
-    <main>
-      <!-- text-top -->
+        <div class="cars">
+          <article class="car-card">
+            <h3>Porsche</h3>
+            <p>Turbo S</p>
+            <img class="car-brand" src="./assets/img/porsche-badge.png"
+              alt="Porsche Turbo S" />
+            <div class="car-specs">
+              <div class="spec">
+                <img src="./assets/svg/acceleration-icon.svg" alt />
+                <p>3.7 Sec</p>
+              </div>
+              <div class="spec">
+                <img src="./assets/svg/speed-icon.svg" alt />
+                <p>356 Km/h</p>
+              </div>
+              <div class="spec">
+                <img src="./assets/svg/power-icon.svg" alt />
+                <p>Electric</p>
+              </div>
+            </div>
+            <div class="car-footer">
+              <p class="car-price">$175,900</p>
+              <a href="#" aria-label="View details for Porsche Turbo S">
+                <img src="./assets/svg/arrow-right-icon.svg" alt />
+              </a>
+            </div>
+          </article>
 
-      <h2 class="text-top" id="popular">
-        Choose Your Electric Car Of The Porsche Brand
-      </h2>
+          <article class="car-card">
+            <h3>Porsche</h3>
+            <p>Turbo S</p>
+            <img class="car-brand" src="./assets/img/porsche-badge.png"
+              alt="Porsche Turbo S" />
+            <div class="car-specs">
+              <div class="spec">
+                <img src="./assets/svg/acceleration-icon.svg" alt />
+                <p>3.7 Sec</p>
+              </div>
+              <div class="spec">
+                <img src="./assets/svg/speed-icon.svg" alt />
+                <p>356 Km/h</p>
+              </div>
+              <div class="spec">
+                <img src="./assets/svg/power-icon.svg" alt />
+                <p>Electric</p>
+              </div>
+            </div>
+            <div class="car-footer">
+              <p class="car-price">$175,900</p>
+              <a href="#" aria-label="View details for Porsche Turbo S">
+                <img src="./assets/svg/arrow-right-icon.svg" alt />
+              </a>
+            </div>
+          </article>
 
-      <!-- cars -->
+          <article class="car-card">
+            <h3>Porsche</h3>
+            <p>Turbo S</p>
+            <img class="car-brand" src="./assets/img/porsche-badge.png"
+              alt="Porsche Turbo S" />
+            <div class="car-specs">
+              <div class="spec">
+                <img src="./assets/svg/acceleration-icon.svg" alt />
+                <p>3.7 Sec</p>
+              </div>
+              <div class="spec">
+                <img src="./assets/svg/speed-icon.svg" alt />
+                <p>356 Km/h</p>
+              </div>
+              <div class="spec">
+                <img src="./assets/svg/power-icon.svg" alt />
+                <p>Electric</p>
+              </div>
+            </div>
+            <div class="car-footer">
+              <p class="car-price">$175,900</p>
+              <a href="#" aria-label="View details for Porsche Turbo S">
+                <img src="./assets/svg/arrow-right-icon.svg" alt />
+              </a>
+            </div>
+          </article>
 
-      <div class="cars">
-        <!-- car-card-->
+          <article class="car-card">
+            <h3>Porsche</h3>
+            <p>Turbo S</p>
+            <img class="car-brand" src="./assets/img/porsche-badge.png"
+              alt="Porsche Turbo S" />
+            <div class="car-specs">
+              <div class="spec">
+                <img src="./assets/svg/acceleration-icon.svg" alt />
+                <p>3.7 Sec</p>
+              </div>
+              <div class="spec">
+                <img src="./assets/svg/speed-icon.svg" alt />
+                <p>356 Km/h</p>
+              </div>
+              <div class="spec">
+                <img src="./assets/svg/power-icon.svg" alt />
+                <p>Electric</p>
+              </div>
+            </div>
+            <div class="car-footer">
+              <p class="car-price">$175,900</p>
+              <a href="#" aria-label="View details for Porsche Turbo S">
+                <img src="./assets/svg/arrow-right-icon.svg" alt />
+              </a>
+            </div>
+          </article>
 
-        <div class="car-card">
-          <h3>Porsche</h3>
-          <p>Turbo S</p>
+          <article class="car-card">
+            <h3>Porsche</h3>
+            <p>Turbo S</p>
+            <img class="car-brand" src="./assets/img/porsche-badge.png"
+              alt="Porsche Turbo S" />
+            <div class="car-specs">
+              <div class="spec">
+                <img src="./assets/svg/acceleration-icon.svg" alt />
+                <p>3.7 Sec</p>
+              </div>
+              <div class="spec">
+                <img src="./assets/svg/speed-icon.svg" alt />
+                <p>356 Km/h</p>
+              </div>
+              <div class="spec">
+                <img src="./assets/svg/power-icon.svg" alt />
+                <p>Electric</p>
+              </div>
+            </div>
+            <div class="car-footer">
+              <p class="car-price">$175,900</p>
+              <a href="#" aria-label="View details for Porsche Turbo S">
+                <img src="./assets/svg/arrow-right-icon.svg" alt />
+              </a>
+            </div>
+          </article>
 
+          <article class="car-card">
+            <h3>Porsche</h3>
+            <p>Taycan</p>
+            <img class="car-brand" src="./assets/img/porsche-taycan.png"
+              alt="Porsche Taycan" />
+            <div class="car-specs">
+              <div class="spec">
+                <img src="./assets/svg/acceleration-icon.svg" alt />
+                <p>3.7 Sec</p>
+              </div>
+              <div class="spec">
+                <img src="./assets/svg/speed-icon.svg" alt />
+                <p>356 Km/h</p>
+              </div>
+              <div class="spec">
+                <img src="./assets/svg/power-icon.svg" alt />
+                <p>Electric</p>
+              </div>
+            </div>
+            <div class="car-footer">
+              <p class="car-price">$114,900</p>
+              <a href="#" aria-label="View details for Porsche Taycan">
+                <img src="./assets/svg/arrow-right-icon.svg" alt />
+              </a>
+            </div>
+          </article>
+
+          <article class="car-card">
+            <h3>Porsche</h3>
+            <p>Turbo S Cross</p>
+            <img class="car-brand" src="./assets/img/porsche-turbo-s-cross.png"
+              alt="Porsche Turbo S Cross" />
+            <div class="car-specs">
+              <div class="spec">
+                <img src="./assets/svg/acceleration-icon.svg" alt />
+                <p>3.7 Sec</p>
+              </div>
+              <div class="spec">
+                <img src="./assets/svg/speed-icon.svg" alt />
+                <p>356 Km/h</p>
+              </div>
+              <div class="spec">
+                <img src="./assets/svg/power-icon.svg" alt />
+                <p>Electric</p>
+              </div>
+            </div>
+            <div class="car-footer">
+              <p class="car-price">$175,900</p>
+              <a href="#" aria-label="View details for Porsche Turbo S Cross">
+                <img src="./assets/svg/arrow-right-icon.svg" alt />
+              </a>
+            </div>
+          </article>
+
+          <article class="car-card">
+            <h3>Porsche</h3>
+            <p>Cayman</p>
+            <img class="car-brand" src="./assets/img/porsche-cayman.png"
+              alt="Porsche Cayman" />
+            <div class="car-specs">
+              <div class="spec">
+                <img src="./assets/svg/acceleration-icon.svg" alt />
+                <p>3.7 Sec</p>
+              </div>
+              <div class="spec">
+                <img src="./assets/svg/speed-icon.svg" alt />
+                <p>356 Km/h</p>
+              </div>
+              <div class="spec">
+                <img src="./assets/svg/power-icon.svg" alt />
+                <p>Electric</p>
+              </div>
+            </div>
+            <div class="car-footer">
+              <p class="car-price">$128,900</p>
+              <a href="#" aria-label="View details for Porsche Cayman">
+                <img src="./assets/svg/arrow-right-icon.svg" alt />
+              </a>
+            </div>
+          </article>
+
+          <article class="car-card">
+            <h3>Porsche</h3>
+            <p>Boxster 718</p>
+            <img class="car-brand" src="./assets/img/porsche-boxster-718.png"
+              alt="Porsche Boxster 718" />
+            <div class="car-specs">
+              <div class="spec">
+                <img src="./assets/svg/acceleration-icon.svg" alt />
+                <p>3.7 Sec</p>
+              </div>
+              <div class="spec">
+                <img src="./assets/svg/speed-icon.svg" alt />
+                <p>356 Km/h</p>
+              </div>
+              <div class="spec">
+                <img src="./assets/svg/power-icon.svg" alt />
+                <p>Electric</p>
+              </div>
+            </div>
+            <div class="car-footer">
+              <p class="car-price">$125,900</p>
+              <a href="#" aria-label="View details for Porsche Boxster 718">
+                <img src="./assets/svg/arrow-right-icon.svg" alt />
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="Car-popular">
           <img
-            class="car-brand"
-            src="./assets/img/porsche-badge.png"
-            alt="Porsche Turbo S" />
-
-          <div class="car-specs">
-            <div class="spec">
-              <img src="./assets/svg/acceleration-icon.svg" alt
-                aria-hidden="true" />
-              <p>3.7 Sec</p>
-            </div>
-
-            <div class="spec">
-              <img src="./assets/svg/mileage-icon.svg" alt aria-hidden="true" />
-              <p>356 Km/h</p>
-            </div>
-
-            <div class="spec">
-              <img src="./assets/svg/speed-icon.svg" alt aria-hidden="true" />
-              <p>Electric</p>
-            </div>
-          </div>
-          <div class="car-footer">
-            <h3>$175,900</h3>
-            <img src="./assets/svg/arrow-right-icon.svg" alt
-              aria-hidden="true" />
-          </div>
-        </div>
-
-        <!-- car-card-->
-
-        <div class="car-card">
-          <h3>Porsche</h3>
-          <p>Turbo S</p>
-
-          <img class="car-brand" src="./assets/img/porsche-badge.png"
-            alt="Porsche Turbo S" />
-
-          <div class="car-specs">
-            <div class="spec">
-              <img src="./assets/svg/acceleration-icon.svg" alt
-                aria-hidden="true" />
-              <p>3.7 Sec</p>
-            </div>
-
-            <div class="spec">
-              <img src="./assets/svg/mileage-icon.svg" alt aria-hidden="true" />
-              <p>356 Km/h</p>
-            </div>
-
-            <div class="spec">
-              <img src="./assets/svg/power-icon.svg" alt aria-hidden="true" />
-              <p>Electric</p>
-            </div>
-          </div>
-          <div class="car-footer">
-            <h3>$175,900</h3>
-            <img src="./assets/svg/arrow-right-icon.svg" alt
-              aria-hidden="true" />
-          </div>
-        </div>
-
-        <!-- car-card-->
-
-        <div class="car-card">
-          <h3>Porsche</h3>
-          <p>Turbo S</p>
-
-          <img class="car-brand" src="./assets/img/porsche-badge.png"
-            alt="Porsche Turbo S" />
-
-          <div class="car-specs">
-            <div class="spec">
-              <img src="./assets/svg/acceleration-icon.svg" alt
-                aria-hidden="true" />
-              <p>3.7 Sec</p>
-            </div>
-
-            <div class="spec">
-              <img src="./assets/svg/mileage-icon.svg" alt aria-hidden="true" />
-              <p>356 Km/h</p>
-            </div>
-
-            <div class="spec">
-              <img src="./assets/svg/power-icon.svg" alt aria-hidden="true" />
-              <p>Electric</p>
-            </div>
-          </div>
-          <div class="car-footer">
-            <h3>$175,900</h3>
-            <img src="./assets/svg/arrow-right-icon.svg" alt
-              aria-hidden="true" />
-          </div>
-        </div>
-
-        <!-- car-card-->
-
-        <div class="car-card">
-          <h3>Porsche</h3>
-          <p>Turbo S</p>
-
-          <img class="car-brand" src="./assets/img/porsche-badge.png"
-            alt="Porsche Turbo S" />
-
-          <div class="car-specs">
-            <div class="spec">
-              <img src="./assets/svg/acceleration-icon.svg" alt
-                aria-hidden="true" />
-              <p>3.7 Sec</p>
-            </div>
-
-            <div class="spec">
-              <img src="./assets/svg/speed-icon.svg" alt aria-hidden="true" />
-              <p>356 Km/h</p>
-            </div>
-
-            <div class="spec">
-              <img src="./assets/svg/power-icon.svg" alt aria-hidden="true" />
-              <p>Electric</p>
-            </div>
-          </div>
-          <div class="car-footer">
-            <h3>$175,900</h3>
-            <img src="./assets/svg/arrow-right-icon.svg" alt
-              aria-hidden="true" />
-          </div>
-        </div>
-
-        <!-- car-card-->
-
-        <div class="car-card">
-          <h3>Porsche</h3>
-          <p>Turbo S</p>
-
-          <img class="car-brand" src="./assets/img/porsche-badge.png"
-            alt="Porsche Turbo S" />
-
-          <div class="car-specs">
-            <div class="spec">
-              <img src="./assets/svg/acceleration-icon.svg" alt
-                aria-hidden="true" />
-              <p>3.7 Sec</p>
-            </div>
-
-            <div class="spec">
-              <img src="./assets/svg/mileage-icon.svg" alt aria-hidden="true" />
-              <p>356 Km/h</p>
-            </div>
-
-            <div class="spec">
-              <img src="./assets/svg/power-icon.svg" alt aria-hidden="true" />
-              <p>Electric</p>
-            </div>
-          </div>
-          <div class="car-footer">
-            <h3>$175,900</h3>
-            <img src="./assets/svg/arrow-right-icon.svg" alt
-              aria-hidden="true" />
-          </div>
-        </div>
-
-        <!-- car-card-->
-
-        <div class="car-card">
-          <h3>Porsche</h3>
-          <p>Taycan</p>
-
+            class="indicator"
+            src="./assets/svg/popular-indicator.svg"
+            alt="Popular features indicator" />
           <img
-            class="car-brand"
-            src="./assets/img/porsche-taycan.png"
-            alt="Porsche Taycan" />
-
-          <div class="car-specs">
-            <div class="spec">
-              <img src="./assets/svg/acceleration-icon.svg" alt
-                aria-hidden="true" />
-              <p>3.7 Sec</p>
-            </div>
-
-            <div class="spec">
-              <img src="./assets/svg/speed-icon.svg" alt aria-hidden="true" />
-              <p>356 Km/h</p>
-            </div>
-
-            <div class="spec">
-              <img src="./assets/svg/power-icon.svg" alt aria-hidden="true" />
-              <p>Electric</p>
-            </div>
-          </div>
-          <div class="car-footer">
-            <h3>$114,900</h3>
-            <img src="./assets/svg/arrow-right-icon.svg" alt
-              aria-hidden="true" />
-          </div>
-        </div>
-
-        <!-- car-card-->
-
-        <div class="car-card">
-          <h3>Porsche</h3>
-          <p>Turbo S Cross</p>
-
+            class="desktop"
+            src="./assets/img/popular-features.png"
+            alt="Popular car features" />
           <img
-            class="car-brand"
-            src="./assets/img/porsche-turbo-s-cross.png"
-            alt="Porsche Turbo S Cross" />
-
-          <div class="car-specs">
-            <div class="spec">
-              <img src="./assets/svg/acceleration-icon.svg" alt
-                aria-hidden="true" />
-              <p>3.7 Sec</p>
-            </div>
-
-            <div class="spec">
-              <img src="./assets/svg/speed-icon.svg" alt aria-hidden="true" />
-              <p>356 Km/h</p>
-            </div>
-
-            <div class="spec">
-              <img src="./assets/svg/power-icon.svg" alt aria-hidden="true" />
-              <p>Electric</p>
-            </div>
-          </div>
-          <div class="car-footer">
-            <h3>$175,900</h3>
-            <img src="./assets/svg/arrow-right-icon.svg" alt
-              aria-hidden="true" />
-          </div>
-        </div>
-
-        <!-- car-card-->
-
-        <div class="car-card">
-          <h3>Porsche</h3>
-          <p>Cayman</p>
-
-          <img
-            class="car-brand"
-            src="./assets/img/porsche-cayman.png"
-            alt="Porsche Cayman" />
-
-          <div class="car-specs">
-            <div class="spec">
-              <img src="./assets/svg/acceleration-icon.svg" alt
-                aria-hidden="true" />
-              <p>3.7 Sec</p>
-            </div>
-
-            <div class="spec">
-              <img src="./assets/svg/speed-icon.svg" alt aria-hidden="true" />
-              <p>356 Km/h</p>
-            </div>
-
-            <div class="spec">
-              <img src="./assets/svg/power-icon.svg" alt aria-hidden="true" />
-              <p>Electric</p>
-            </div>
-          </div>
-          <div class="car-footer">
-            <h3>$128,900</h3>
-            <img src="./assets/svg/arrow-right-icon.svg" alt
-              aria-hidden="true" />
-          </div>
-        </div>
-
-        <!-- car-card-->
-
-        <div class="car-card">
-          <h3>Porsche</h3>
-          <p>Boxster 718</p>
-
-          <img
-            class="car-brand"
-            src="./assets/img/porsche-boxster-718.png"
-            alt="Porsche Boxster 718" />
-
-          <div class="car-specs">
-            <div class="spec">
-              <img src="./assets/svg/acceleration-icon.svg" alt
-                aria-hidden="true" />
-              <p>3.7 Sec</p>
-            </div>
-
-            <div class="spec">
-              <img src="./assets/svg/speed-icon.svg" alt aria-hidden="true" />
-              <p>356 Km/h</p>
-            </div>
-
-            <div class="spec">
-              <img src="./assets/svg/power-icon.svg" alt aria-hidden="true" />
-              <p>Electric</p>
-            </div>
-          </div>
-          <div class="car-footer">
-            <h3>$125,900</h3>
-            <img src="./assets/svg/arrow-right-icon.svg" alt
-              aria-hidden="true" />
-          </div>
-        </div>
-      </div>
-
-      <!-- Car-popular -->
-
-      <div class="Car-popular">
-        <img
-          class="indicator"
-          src="./assets/svg/popular-indicator.svg"
-          alt="popular features indicator" />
-        <img
-          class="desktop"
-          src="./assets/img/popular-features.png"
-          alt="popular car features" />
-        <img
-          class="mobile"
-          src="./assets/img/popular-features-mobile.png"
-          alt="popular car features mobile" />
-      </div>
-
-      <!-- featured-cars -->
-
-      <div class="featured-cars" id="featured">
-        <h2>Featured Luxury Cars</h2>
-        <div class="filter-icons">
-          <img src="./assets/svg/featured-filter-1.svg" alt
-            aria-hidden="true" />
-          <img src="./assets/svg/featured-filter-2.svg" alt
-            aria-hidden="true" />
-          <img src="./assets/svg/featured-filter-3.svg" alt
-            aria-hidden="true" />
-          <img src="./assets/svg/featured-filter-4.svg" alt
-            aria-hidden="true" />
-        </div>
-      </div>
-    </main>
-
-    <!-- section -->
-
-    <section id="offers" aria-labelledby="offers-title">
-      <!-- boxes -->
-
-      <div class="boxes">
-        <!-- box-card -->
-
-        <div class="box-card">
-          <h2 class="box-card__brand">Tesla</h2>
-          <p class="box-card__model">Model X</p>
-
-          <img
-            class="box-card__image"
-            src="./assets/img/tesla-model-x.png"
-            alt="Tesla Model X" />
-          <img
-            class="shape-back"
-            src="./assets/img/card-background-pattern.png"
+            class="mobile"
+            src="./assets/img/popular-features-mobile.png"
             alt
             aria-hidden="true" />
+        </div>
+      </section>
 
-          <div class="box-card__footer">
-            <h2 class="box-card__price">$98,900</h2>
-            <img
-              class="box-card__icon"
-              src="./assets/svg/arrow-right-icon.svg"
-              alt aria-hidden="true" />
+      <!-- Featured cars -->
+      <section class="featured-cars" id="featured"
+        aria-labelledby="featured-title">
+        <h2 id="featured-title">Featured Luxury Cars</h2>
+
+        <div class="filter-icons">
+          <img src="./assets/svg/featured-filter-1.svg" alt />
+          <img src="./assets/svg/featured-filter-2.svg" alt />
+          <img src="./assets/svg/featured-filter-3.svg" alt />
+          <img src="./assets/svg/featured-filter-4.svg" alt />
+        </div>
+
+        <div class="boxes">
+          <article class="box-card">
+            <h3 class="box-card__brand">Tesla</h3>
+            <p class="box-card__model">Model X</p>
+            <img class="box-card__image" src="./assets/img/tesla-model-x.png"
+              alt="Tesla Model X" />
+            <img class="shape-back"
+              src="./assets/img/card-background-pattern.png" alt />
+            <div class="box-card__footer">
+              <p class="box-card__price">$98,900</p>
+              <a href="#" aria-label="View details for Tesla Model X">
+                <img class="box-card__icon"
+                  src="./assets/svg/arrow-right-icon.svg" alt />
+              </a>
+            </div>
+          </article>
+
+          <article class="box-card">
+            <h3 class="box-card__brand">Tesla</h3>
+            <p class="box-card__model">Model 3</p>
+            <img class="box-card__image" src="./assets/img/tesla-model-3.png"
+              alt="Tesla Model 3" />
+            <img class="shape-back"
+              src="./assets/img/card-background-pattern.png" alt />
+            <div class="box-card__footer">
+              <p class="box-card__price">$45,900</p>
+              <a href="#" aria-label="View details for Tesla Model 3">
+                <img class="box-card__icon"
+                  src="./assets/svg/arrow-right-icon.svg" alt />
+              </a>
+            </div>
+          </article>
+
+          <article class="box-card">
+            <h3 class="box-card__brand">Audi</h3>
+            <p class="box-card__model">E-tron</p>
+            <img class="box-card__image" src="./assets/img/audi-e-tron.png"
+              alt="Audi E-tron" />
+            <img class="shape-back"
+              src="./assets/img/card-background-pattern.png" alt />
+            <div class="box-card__footer">
+              <p class="box-card__price">$175,900</p>
+              <a href="#" aria-label="View details for Audi E-tron">
+                <img class="box-card__icon"
+                  src="./assets/svg/arrow-right-icon.svg" alt />
+              </a>
+            </div>
+          </article>
+
+          <article class="box-card">
+            <h3 class="box-card__brand">Porsche</h3>
+            <p class="box-card__model">Boxster 987</p>
+            <img class="box-card__image"
+              src="./assets/img/porsche-boxster-987.png"
+              alt="Porsche Boxster 987" />
+            <img class="shape-back"
+              src="./assets/img/card-background-pattern.png" alt />
+            <div class="box-card__footer">
+              <p class="box-card__price">$126,900</p>
+              <a href="#" aria-label="View details for Porsche Boxster 987">
+                <img class="box-card__icon"
+                  src="./assets/svg/arrow-right-icon.svg" alt />
+              </a>
+            </div>
+          </article>
+
+          <article class="box-card">
+            <h3 class="box-card__brand">Porsche</h3>
+            <p class="box-card__model">Panamera</p>
+            <img class="box-card__image" src="./assets/img/porsche-panamera.png"
+              alt="Porsche Panamera" />
+            <img class="shape-back"
+              src="./assets/img/card-background-pattern.png" alt />
+            <div class="box-card__footer">
+              <p class="box-card__price">$126,900</p>
+              <a href="#" aria-label="View details for Porsche Panamera">
+                <img class="box-card__icon"
+                  src="./assets/svg/arrow-right-icon.svg" alt />
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Offers / subscribe -->
+      <section id="offers" aria-labelledby="offers-title">
+        <div class="offer">
+          <img class="img body" src="./assets/img/subscribe-background.png"
+            alt />
+          <img class="img-body-mobile"
+            src="./assets/img/subscribe-background-mobile.png" alt />
+
+          <div class="offer__container">
+            <div class="offer__content">
+              <h2 class="offer__title" id="offers-title">
+                Do You Want To Receive <br />
+                Special Offers?
+              </h2>
+              <p class="offer__desc">
+                Be the first to receive all the information about our products
+                and new cars by email by subscribing to our mailing list.
+              </p>
+              <button class="offer__btn" type="button">Subscribe Now</button>
+            </div>
+
+            <div class="offer__image">
+              <img
+                class="subscribe"
+                src="./assets/img/subscribe-offer-car.png"
+                alt="Electric car offer" />
+              <img
+                class="subscribe-mobile"
+                src="./assets/img/subscribe-car-mobile.png"
+                alt
+                aria-hidden="true" />
+            </div>
           </div>
         </div>
 
-        <!-- box-card -->
-
-        <div class="box-card">
-          <h2 class="box-card__brand">Tesla</h2>
-          <p class="box-card__model">Model 3</p>
-
-          <img
-            class="box-card__image"
-            src="./assets/img/tesla-model-3.png"
-            alt="Tesla Model 3" />
-          <img
-            class="shape-back"
-            src="./assets/img/card-background-pattern.png"
-            alt aria-hidden="true" />
-
-          <div class="box-card__footer">
-            <h2 class="box-card__price">$45,900</h2>
-            <img
-              class="box-card__icon"
-              src="./assets/svg/arrow-right-icon.svg"
-              alt aria-hidden="true" />
-          </div>
+        <div class="icon-cars">
+          <img src="./assets/svg/brand-logo-1.svg" alt />
+          <img src="./assets/svg/brand-logo-2.svg" alt />
+          <img src="./assets/svg/brand-logo-3.svg" alt />
+          <img src="./assets/svg/brand-logo-4.svg" alt />
+          <img src="./assets/svg/brand-logo-5.svg" alt />
+          <img src="./assets/svg/brand-logo-6.svg" alt />
         </div>
+      </section>
+    </main>
 
-        <!-- box-card -->
-
-        <div class="box-card">
-          <h2 class="box-card__brand">Audi</h2>
-          <p class="box-card__model">E-tron</p>
-
-          <img
-            class="box-card__image"
-            src="./assets/img/audi-e-tron.png"
-            alt="Audi E-tron" />
-          <img
-            class="shape-back"
-            src="./assets/img/card-background-pattern.png"
-            alt aria-hidden="true" />
-
-          <div class="box-card__footer">
-            <h2 class="box-card__price">$175,900</h2>
-            <img
-              class="box-card__icon"
-              src="./assets/svg/arrow-right-icon.svg"
-              alt aria-hidden="true" />
-          </div>
-        </div>
-
-        <!-- box-card -->
-
-        <div class="box-card">
-          <h2 class="box-card__brand">Porsche</h2>
-          <p class="box-card__model">Boxster 987</p>
-
-          <img
-            class="box-card__image"
-            src="./assets/img/porsche-boxster-987.png"
-            alt="Porsche Boxster 987" />
-          <img
-            class="shape-back"
-            src="./assets/img/card-background-pattern.png"
-            alt aria-hidden="true" />
-
-          <div class="box-card__footer">
-            <h2 class="box-card__price">$126,900</h2>
-            <img
-              class="box-card__icon"
-              src="./assets/svg/arrow-right-icon.svg"
-              alt aria-hidden="true" />
-          </div>
-        </div>
-
-        <!-- box-card -->
-
-        <div class="box-card">
-          <h2 class="box-card__brand">Porsche</h2>
-          <p class="box-card__model">Panamera</p>
-
-          <img
-            class="box-card__image"
-            src="./assets/img/porsche-panamera.png"
-            alt="Porsche Panamera" />
-          <img
-            class="shape-back"
-            src="./assets/img/card-background-pattern.png"
-            alt aria-hidden="true" />
-
-          <div class="box-card__footer">
-            <h2 class="box-card__price">$126,900</h2>
-            <img
-              class="box-card__icon"
-              src="./assets/svg/arrow-right-icon.svg"
-              alt aria-hidden="true" />
-          </div>
-        </div>
-      </div>
-
-      <!-- offer -->
-
-      <div class="offer">
-        <img
-          class="img body"
-          src="./assets/img/subscribe-background.png"
-          alt aria-hidden="true" />
-        <img
-          class="img-body-mobile"
-          src="./assets/img/subscribe-background-mobile.png"
-          alt aria-hidden="true" />
-
-        <div class="offer__container">
-          <div class="offer__content">
-            <h2 class="offer__title" id="offers-title">
-              Do You Want To Receive <br />
-              Special Offers?
-            </h2>
-
-            <p class="offer__desc">
-              Be the first to receive all the information about our products and
-              new cars by email by subscribing to our mailing list.
-            </p>
-
-            <button class="offer__btn" type="button">Subscribe Now</button>
-          </div>
-
-          <div class="offer__image">
-            <img
-              class="subscribe"
-              src="./assets/img/subscribe-offer-car.png"
-              alt="Electric car offer" />
-            <img
-              class="subscribe-mobile"
-              src="./assets/img/subscribe-car-mobile.png"
-              alt="Electric car offer" />
-          </div>
-        </div>
-      </div>
-
-      <!-- icon-cars -->
-
-      <div class="icon-cars">
-        <img src="./assets/svg/brand-logo-1.svg" alt aria-hidden="true" />
-        <img src="./assets/svg/brand-logo-2.svg" alt aria-hidden="true" />
-        <img src="./assets/svg/brand-logo-3.svg" alt aria-hidden="true" />
-        <img src="./assets/svg/brand-logo-4.svg" alt aria-hidden="true" />
-        <img src="./assets/svg/brand-logo-5.svg" alt aria-hidden="true" />
-        <img src="./assets/svg/brand-logo-6.svg" alt aria-hidden="true" />
-      </div>
-    </section>
-
-    <!-- footer -->
-
+    <!-- ========== FOOTER ========== -->
     <footer class="site-end">
-      <img
-        class="shape-top"
-        src="./assets/img/footer-shape-bottom.png"
-        alt aria-hidden="true" />
+      <img class="shape-top" src="./assets/img/footer-shape-bottom.png" alt />
 
       <div class="end-container">
         <div class="brand-block">
           <img src="./assets/svg/elecar-mark.svg" alt="Elecar brand icon" />
-          <h2>Elecar</h2>
+          <p class="brand-name">Elecar</p>
         </div>
 
         <p class="brand-text">
@@ -738,53 +570,47 @@
         </p>
 
         <div class="links-wrapper">
-          <div class="links-col">
-            <h2>Company</h2>
+          <nav class="links-col" aria-labelledby="footer-company">
+            <h2 id="footer-company">Company</h2>
             <a href="#about">About</a>
             <a href="#popular">Cars</a>
             <a href="#home">History</a>
             <a href="#featured">Shop</a>
-          </div>
+          </nav>
 
-          <div class="links-col">
-            <h2>Information</h2>
+          <nav class="links-col" aria-labelledby="footer-info">
+            <h2 id="footer-info">Information</h2>
             <a href="#offers">Request a quote</a>
             <a href="#featured">Find a dealer</a>
             <a href="#home">Contact us</a>
             <a href="#about">Services</a>
-          </div>
+          </nav>
 
           <div class="links-col">
             <h2>Follow us</h2>
             <div class="social-group">
-              <img src="./assets/svg/facebook-icon.svg" alt
-                aria-hidden="true" />
-              <img src="./assets/svg/linkedin-icon.svg" alt
-                aria-hidden="true" />
-              <img src="./assets/svg/twitter-icon.svg" alt aria-hidden="true" />
+              <a href="#" aria-label="Elecar on Facebook">
+                <img src="./assets/svg/facebook-icon.svg" alt />
+              </a>
+              <a href="#" aria-label="Elecar on LinkedIn">
+                <img src="./assets/svg/linkedin-icon.svg" alt />
+              </a>
+              <a href="#" aria-label="Elecar on Twitter">
+                <img src="./assets/svg/twitter-icon.svg" alt />
+              </a>
             </div>
           </div>
-          <img
-            class="shape-right"
-            src="./assets/img/footer-ornament-right.png"
-            alt aria-hidden="true" />
+
+          <img class="shape-right" src="./assets/img/footer-ornament-right.png"
+            alt />
           <img class="shape-left" src="./assets/img/footer-ornament-left.png"
-            alt aria-hidden="true" />
+            alt />
         </div>
       </div>
 
-      <img class="shape-bottom" src="./assets/img/footer-shape-top.png" alt
-        aria-hidden="true" />
+      <img class="shape-bottom" src="./assets/img/footer-shape-top.png" alt />
     </footer>
 
-    <!-- Main JavaScript -->
-
     <script type="module" src="./scripts/main.js"></script>
-
-    <!-- Swiper Library -->
-
-    <script src="./scripts/modules/swiper-bundle.min.js"></script>
-
   </body>
-
 </html>
