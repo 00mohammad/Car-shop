@@ -49,14 +49,14 @@
   color: var(--text-color);
 }
 
-.shape-small {
+.hero__side-decoration {
   position: absolute;
   right: 0;
   top: 50%;
   transform: translateY(47%);
 }
 
-.image-container {
+.hero__ring-container {
   position: relative;
   display: flex;
   width: 150px;
@@ -67,8 +67,8 @@
   overflow: hidden;
 }
 
-.image1,
-.image2 {
+.hero__ring--inner,
+.hero__ring--outer {
   position: absolute;
   top: 0;
   left: 0;
@@ -77,7 +77,7 @@
   height: 70%;
 }
 
-.start-text {
+.hero__ring-label {
   position: absolute;
   z-index: 1;
   margin-right: 2.8rem;

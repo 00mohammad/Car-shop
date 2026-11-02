@@ -19,14 +19,14 @@
     <!-- ========== HEADER: logo + navigation only ========== -->
     <header>
       <div class="logo">
-        <img class="shape-big" src="./assets/img/hero-shape-big.png" alt />
+        <img class="header__background-shape" src="./assets/img/hero-shape-big.png" alt />
         <a href="#home">
-          <img class="logo-img" src="./assets/img/elecar-logo.png"
+          <img class="header__logo-image" src="./assets/img/elecar-logo.png"
             alt="Elecar logo" />
         </a>
-        <div class="img-mobil-Right">
+        <div class="header__mobile-decoration-wrapper">
           <img
-            class="shape-big-mobil"
+            class="header__background-shape--mobile"
             src="./assets/img/hero-shape-big-mobile.png"
             alt />
         </div>
@@ -63,17 +63,17 @@
 
           <div class="car-info">
             <img src="./assets/svg/electric-car-icon.svg" alt
-              class="car-icon" />
+              class="hero__electric-car-icon" />
             <p class="car-type">Electric car</p>
           </div>
 
           <img
-            class="home"
+            class="hero__car-image"
             src="./assets/img/hero-car.png"
             alt="Porsche Mission E hero car" />
           <!-- Mobile duplicate: hidden from screen readers to avoid double announcement -->
           <img
-            class="home-mobil"
+            class="hero__car-image--mobile"
             src="./assets/img/hero-car-mobile.png"
             alt
             aria-hidden="true" />
@@ -97,15 +97,15 @@
           </li>
         </ul>
 
-        <img class="shape-small" src="./assets/img/hero-shape-small-alt.png"
+        <img class="hero__side-decoration" src="./assets/img/hero-shape-small-alt.png"
           alt />
-        <img class="small-mobil" src="./assets/img/hero-shape-small-mobile.png"
+        <img class="hero__side-decoration--mobile" src="./assets/img/hero-shape-small-mobile.png"
           alt />
 
-        <div class="image-container">
-          <img src="./assets/svg/hero-ring-inner.svg" alt class="image1" />
-          <img src="./assets/svg/hero-ring-outer.svg" alt class="image2" />
-          <p class="start-text">START</p>
+        <div class="hero__ring-container">
+          <img src="./assets/svg/hero-ring-inner.svg" alt class="hero__ring--inner" />
+          <img src="./assets/svg/hero-ring-outer.svg" alt class="hero__ring--outer" />
+          <p class="hero__ring-label">START</p>
         </div>
       </section>
 
@@ -113,15 +113,15 @@
       <section class="about-container" id="about" aria-labelledby="about-title">
         <div class="about-images">
           <img
-            class="img-main"
+            class="about__interior-image"
             src="./assets/img/about-interior.png"
             alt="Interior of an electric car" />
           <img
-            class="img-main-mobil"
+            class="about__interior-image--mobile"
             src="./assets/img/about-interior-mobile.png"
             alt
             aria-hidden="true" />
-          <img class="img-overlay" src="./assets/img/about-overlay-card.png"
+          <img class="about__stat-card-image" src="./assets/img/about-overlay-card.png"
             alt />
 
           <div class="stat">
@@ -140,7 +140,7 @@
           <button type="button">Know more</button>
         </div>
 
-        <img class="shape-small-short" src="./assets/img/hero-shape-small.png"
+        <img class="about__background-decoration" src="./assets/img/hero-shape-small.png"
           alt />
       </section>
 
@@ -154,7 +154,7 @@
           <article class="car-card">
             <h3>Porsche</h3>
             <p>Turbo S</p>
-            <img class="car-brand" src="./assets/img/porsche-badge.png"
+            <img class="car-card__brand-image" src="./assets/img/porsche-badge.png"
               alt="Porsche Turbo S" />
             <div class="car-specs">
               <div class="spec">
@@ -181,7 +181,7 @@
           <article class="car-card">
             <h3>Porsche</h3>
             <p>Turbo S</p>
-            <img class="car-brand" src="./assets/img/porsche-badge.png"
+            <img class="car-card__brand-image" src="./assets/img/porsche-badge.png"
               alt="Porsche Turbo S" />
             <div class="car-specs">
               <div class="spec">
@@ -208,7 +208,7 @@
           <article class="car-card">
             <h3>Porsche</h3>
             <p>Turbo S</p>
-            <img class="car-brand" src="./assets/img/porsche-badge.png"
+            <img class="car-card__brand-image" src="./assets/img/porsche-badge.png"
               alt="Porsche Turbo S" />
             <div class="car-specs">
               <div class="spec">
@@ -235,7 +235,7 @@
           <article class="car-card">
             <h3>Porsche</h3>
             <p>Turbo S</p>
-            <img class="car-brand" src="./assets/img/porsche-badge.png"
+            <img class="car-card__brand-image" src="./assets/img/porsche-badge.png"
               alt="Porsche Turbo S" />
             <div class="car-specs">
               <div class="spec">
@@ -262,7 +262,7 @@
           <article class="car-card">
             <h3>Porsche</h3>
             <p>Turbo S</p>
-            <img class="car-brand" src="./assets/img/porsche-badge.png"
+            <img class="car-card__brand-image" src="./assets/img/porsche-badge.png"
               alt="Porsche Turbo S" />
             <div class="car-specs">
               <div class="spec">
@@ -289,7 +289,7 @@
           <article class="car-card">
             <h3>Porsche</h3>
             <p>Taycan</p>
-            <img class="car-brand" src="./assets/img/porsche-taycan.png"
+            <img class="car-card__brand-image" src="./assets/img/porsche-taycan.png"
               alt="Porsche Taycan" />
             <div class="car-specs">
               <div class="spec">
@@ -316,7 +316,7 @@
           <article class="car-card">
             <h3>Porsche</h3>
             <p>Turbo S Cross</p>
-            <img class="car-brand" src="./assets/img/porsche-turbo-s-cross.png"
+            <img class="car-card__brand-image" src="./assets/img/porsche-turbo-s-cross.png"
               alt="Porsche Turbo S Cross" />
             <div class="car-specs">
               <div class="spec">
@@ -343,7 +343,7 @@
           <article class="car-card">
             <h3>Porsche</h3>
             <p>Cayman</p>
-            <img class="car-brand" src="./assets/img/porsche-cayman.png"
+            <img class="car-card__brand-image" src="./assets/img/porsche-cayman.png"
               alt="Porsche Cayman" />
             <div class="car-specs">
               <div class="spec">
@@ -370,7 +370,7 @@
           <article class="car-card">
             <h3>Porsche</h3>
             <p>Boxster 718</p>
-            <img class="car-brand" src="./assets/img/porsche-boxster-718.png"
+            <img class="car-card__brand-image" src="./assets/img/porsche-boxster-718.png"
               alt="Porsche Boxster 718" />
             <div class="car-specs">
               <div class="spec">
@@ -395,17 +395,17 @@
           </article>
         </div>
 
-        <div class="Car-popular">
+        <div class="popular-features">
           <img
-            class="indicator"
+            class="popular-features__indicator"
             src="./assets/svg/popular-indicator.svg"
             alt="Popular features indicator" />
           <img
-            class="desktop"
+            class="popular-features__image--desktop"
             src="./assets/img/popular-features.png"
             alt="Popular car features" />
           <img
-            class="mobile"
+            class="popular-features__image--mobile"
             src="./assets/img/popular-features-mobile.png"
             alt
             aria-hidden="true" />
@@ -417,7 +417,7 @@
         aria-labelledby="featured-title">
         <h2 id="featured-title">Featured Luxury Cars</h2>
 
-        <div class="filter-icons">
+        <div class="featured-cars__filters">
           <img src="./assets/svg/featured-filter-1.svg" alt />
           <img src="./assets/svg/featured-filter-2.svg" alt />
           <img src="./assets/svg/featured-filter-3.svg" alt />
@@ -430,7 +430,7 @@
             <p class="box-card__model">Model X</p>
             <img class="box-card__image" src="./assets/img/tesla-model-x.png"
               alt="Tesla Model X" />
-            <img class="shape-back"
+            <img class="box-card__background"
               src="./assets/img/card-background-pattern.png" alt />
             <div class="box-card__footer">
               <p class="box-card__price">$98,900</p>
@@ -446,7 +446,7 @@
             <p class="box-card__model">Model 3</p>
             <img class="box-card__image" src="./assets/img/tesla-model-3.png"
               alt="Tesla Model 3" />
-            <img class="shape-back"
+            <img class="box-card__background"
               src="./assets/img/card-background-pattern.png" alt />
             <div class="box-card__footer">
               <p class="box-card__price">$45,900</p>
@@ -462,7 +462,7 @@
             <p class="box-card__model">E-tron</p>
             <img class="box-card__image" src="./assets/img/audi-e-tron.png"
               alt="Audi E-tron" />
-            <img class="shape-back"
+            <img class="box-card__background"
               src="./assets/img/card-background-pattern.png" alt />
             <div class="box-card__footer">
               <p class="box-card__price">$175,900</p>
@@ -479,7 +479,7 @@
             <img class="box-card__image"
               src="./assets/img/porsche-boxster-987.png"
               alt="Porsche Boxster 987" />
-            <img class="shape-back"
+            <img class="box-card__background"
               src="./assets/img/card-background-pattern.png" alt />
             <div class="box-card__footer">
               <p class="box-card__price">$126,900</p>
@@ -495,7 +495,7 @@
             <p class="box-card__model">Panamera</p>
             <img class="box-card__image" src="./assets/img/porsche-panamera.png"
               alt="Porsche Panamera" />
-            <img class="shape-back"
+            <img class="box-card__background"
               src="./assets/img/card-background-pattern.png" alt />
             <div class="box-card__footer">
               <p class="box-card__price">$126,900</p>
@@ -511,9 +511,9 @@
       <!-- Offers / subscribe -->
       <section id="offers" aria-labelledby="offers-title">
         <div class="offer">
-          <img class="img body" src="./assets/img/subscribe-background.png"
+          <img class="offer__background-image" src="./assets/img/subscribe-background.png"
             alt />
-          <img class="img-body-mobile"
+          <img class="offer__background-image--mobile"
             src="./assets/img/subscribe-background-mobile.png" alt />
 
           <div class="offer__container">
@@ -531,11 +531,11 @@
 
             <div class="offer__image">
               <img
-                class="subscribe"
+                class="offer__car-image"
                 src="./assets/img/subscribe-offer-car.png"
                 alt="Electric car offer" />
               <img
-                class="subscribe-mobile"
+                class="offer__car-image--mobile"
                 src="./assets/img/subscribe-car-mobile.png"
                 alt
                 aria-hidden="true" />
@@ -543,7 +543,7 @@
           </div>
         </div>
 
-        <div class="icon-cars">
+        <div class="brand-logos">
           <img src="./assets/svg/brand-logo-1.svg" alt />
           <img src="./assets/svg/brand-logo-2.svg" alt />
           <img src="./assets/svg/brand-logo-3.svg" alt />
@@ -556,7 +556,7 @@
 
     <!-- ========== FOOTER ========== -->
     <footer class="site-end">
-      <img class="shape-top" src="./assets/img/footer-shape-bottom.png" alt />
+      <img class="footer__decoration--top" src="./assets/img/footer-shape-bottom.png" alt />
 
       <div class="end-container">
         <div class="brand-block">
@@ -601,14 +601,14 @@
             </div>
           </div>
 
-          <img class="shape-right" src="./assets/img/footer-ornament-right.png"
+          <img class="footer__decoration--right" src="./assets/img/footer-ornament-right.png"
             alt />
-          <img class="shape-left" src="./assets/img/footer-ornament-left.png"
+          <img class="footer__decoration--left" src="./assets/img/footer-ornament-left.png"
             alt />
         </div>
       </div>
 
-      <img class="shape-bottom" src="./assets/img/footer-shape-top.png" alt />
+      <img class="footer__decoration--bottom" src="./assets/img/footer-shape-top.png" alt />
     </footer>
 
     <script type="module" src="./scripts/main.js"></script>

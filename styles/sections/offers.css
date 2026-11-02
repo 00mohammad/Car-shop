@@ -5,7 +5,7 @@
   background-color: var(--body-color);
 }
 
-.img.body {
+.offer__background-image {
   position: absolute;
   top: 50%;
   z-index: 1;
@@ -14,7 +14,7 @@
   pointer-events: none;
 }
 
-.img-body-mobile {
+.offer__background-image--mobile {
   display: none;
 }
 
@@ -68,10 +68,10 @@
   height: auto;
 }
 
-.subscribe {
+.offer__car-image {
   display: block;
 }
 
-.subscribe-mobile {
+.offer__car-image--mobile {
   display: none;
 }

@@ -20,17 +20,17 @@
   margin: 0 auto;
 }
 
-.shape-top,
-.shape-bottom {
+.footer__decoration--top,
+.footer__decoration--bottom {
   position: absolute;
 }
 
-.shape-top {
+.footer__decoration--top {
   top: 0;
   left: 0;
 }
 
-.shape-bottom {
+.footer__decoration--bottom {
   top: 0;
   right: 0;
 }
@@ -99,7 +99,7 @@
   transition: transform 0.3s;
 }
 
-.shape-right,
-.shape-left {
+.footer__decoration--right,
+.footer__decoration--left {
   display: none;
 }

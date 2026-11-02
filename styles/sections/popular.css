@@ -19,19 +19,19 @@
   padding: 2rem;
 }
 
-.Car-popular {
+.popular-features {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.Car-popular img {
+.popular-features img {
   max-width: 100%;
   height: auto;
 }
 
-.mobile {
+.popular-features__image--mobile {
   display: none;
 }
 
@@ -46,10 +46,10 @@
   padding: 3rem;
 }
 
-.filter-icons {
+.featured-cars__filters {
   margin-left: 2rem;
 }
 
-.filter-icons img {
+.featured-cars__filters img {
   margin-right: 1rem;
 }

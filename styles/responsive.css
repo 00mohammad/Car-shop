@@ -60,7 +60,7 @@
 
   /* Car Icons */
 
-  .icon-cars {
+  .brand-logos {
     display: grid;
     grid-template-columns: repeat(3, auto);
     align-items: center;
@@ -73,12 +73,12 @@
 
   /* Decorative Shapes */
 
-  .shape-right {
+  .footer__decoration--right {
     display: block;
     margin-top: -44rem;
   }
 
-  .shape-left {
+  .footer__decoration--left {
     display: block;
     margin-top: -35rem;
     margin-right: -15%;
@@ -114,13 +114,13 @@
     justify-content: flex-start;
   }
 
-  .logo-img {
+  .header__logo-image {
     width: 90px;
     height: 2rem;
     margin: 0;
   }
 
-  .img-mobil-Right {
+  .header__mobile-decoration-wrapper {
     display: none;
   }
 
@@ -178,18 +178,13 @@
     font-size: 1rem;
   }
 
-  .shape-big,
-  .shape-small {
-    display: none;
-  }
-
-  .shape-big-mobil {
+  .header__background-shape--mobile {
     display: block;
     margin-top: 25rem;
     margin-left: 32rem;
   }
 
-  .small-mobil {
+  .hero__side-decoration--mobile {
     position: absolute;
     top: 50%;
     right: 0;
@@ -200,11 +195,11 @@
 
   /* Home Section */
 
-  .home {
+  .hero__car-image {
     display: none;
   }
 
-  .home-mobil {
+  .hero__car-image--mobile {
     display: block;
   }
 
@@ -228,18 +223,18 @@
     padding-bottom: 0;
   }
 
-  .img-main {
+  .about__interior-image {
     display: none;
   }
 
-  .img-main-mobil {
+  .about__interior-image--mobile {
     display: block;
     width: 100%;
     max-width: 20rem;
     border-radius: var(--radius-md);
   }
 
-  .shape-small-short {
+  .about__background-decoration {
     display: none;
   }
 
@@ -260,7 +255,7 @@
     text-align: center;
   }
 
-  .img-overlay {
+  .about__stat-card-image {
     width: 13rem;
   }
 
@@ -284,7 +279,7 @@
     padding: 1.5rem 1rem;
   }
 
-  .start-text {
+  .hero__ring-label {
     margin-bottom: 3rem;
   }
 
@@ -293,7 +288,7 @@
     font-size: 0.8rem;
   }
 
-  .image-container {
+  .hero__ring-container {
     margin-left: 5rem;
   }
 
@@ -326,11 +321,11 @@
 
   /* General Cards */
 
-  .desktop {
+  .popular-features__image--desktop {
     display: none;
   }
 
-  .mobile {
+  .popular-features__image--mobile {
     display: block;
     max-width: 100%;
     height: auto;
@@ -353,11 +348,11 @@
 
   /* Body Images */
 
-  .img.body {
+  .offer__background-image {
     display: none;
   }
 
-  .img-body-mobile {
+  .offer__background-image--mobile {
     position: absolute;
     left: 0;
     z-index: 1;
@@ -392,11 +387,11 @@
     width: 60%;
   }
 
-  .subscribe {
+  .offer__car-image {
     display: none;
   }
 
-  .subscribe-mobile {
+  .offer__car-image--mobile {
     display: block;
     max-width: 100%;
   }
@@ -426,26 +421,26 @@
 
   /* Decorative Shapes */
 
-  .shape-top,
-  .shape-bottom,
-  .shape-left,
-  .shape-right {
+  .footer__decoration--top,
+  .footer__decoration--bottom,
+  .footer__decoration--left,
+  .footer__decoration--right {
     display: none;
   }
 
-  .shape-top {
+  .footer__decoration--top {
     top: -40px;
     left: -40px;
     width: 260px;
   }
 
-  .shape-bottom {
+  .footer__decoration--bottom {
     right: -40px;
     bottom: -40px;
     width: 260px;
   }
 
-  .desktop {
+  .popular-features__image--desktop {
     max-width: 100%;
     height: auto;
   }
@@ -460,11 +455,11 @@
     padding: 1.5rem;
   }
 
-  .filter-icons {
+  .featured-cars__filters {
     margin-left: 1rem;
   }
 
-  .filter-icons img {
+  .featured-cars__filters img {
     margin-right: 1rem;
   }
 }

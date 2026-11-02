@@ -17,22 +17,10 @@ header {
   height: 200px;
 }
 
-.shape-big {
-  height: 50rem;
-}
-
-.logo-img {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 140px;
-}
-
-.shape-big-mobil,
-.img-mobil-Right,
-.small-mobil,
-.home-mobil {
+.header__background-shape--mobile,
+.header__mobile-decoration-wrapper,
+.hero__side-decoration--mobile,
+.hero__car-image--mobile {
   display: none;
 }
 

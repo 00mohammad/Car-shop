@@ -12,18 +12,18 @@
   padding-bottom: 70px;
 }
 
-.img-main {
+.about__interior-image {
   display: block;
   width: 35rem;
   height: auto;
   border-radius: var(--radius-md);
 }
 
-.img-main-mobil {
+.about__interior-image--mobile {
   display: none;
 }
 
-.img-overlay {
+.about__stat-card-image {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -78,7 +78,7 @@
   font-weight: normal;
 }
 
-.shape-small-short {
+.about__background-decoration {
   position: absolute;
   bottom: -50%;
   z-index: -1;
