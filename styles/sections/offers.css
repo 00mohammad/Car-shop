@@ -1,77 +1,37 @@
 .offer {
-  position: relative;
+  padding-bottom: 2rem;
+}
+
+.offer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  background: radial-gradient(ellipse at 70% 60%, rgba(40, 50, 80, 0.5), transparent 60%);
+}
+
+.offer-content h2 {
+  margin-bottom: 1.25rem;
+  font-size: 1.3rem;
+}
+
+.offer-content p {
+  max-width: 21rem;
+  margin-bottom: 2rem;
+  font-size: 0.8rem;
+}
+
+.brand-logos {
   display: flex;
-  justify-content: center;
-  background-color: var(--body-color);
-}
-
-.offer__background-image {
-  position: absolute;
-  top: 50%;
-  z-index: 1;
-  width: 100%;
-  transform: translateY(-50%);
-  pointer-events: none;
-}
-
-.offer__background-image--mobile {
-  display: none;
-}
-
-.offer__container {
-  position: relative;
-  z-index: 2;
-  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 60px;
-  width: 90%;
-  max-width: var(--content-max-width);
-  padding: 60px;
-  border-radius: 28px;
+  gap: 1.5rem;
+  padding-block: 3rem 0;
 }
 
-.offer__content {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: var(--white-color);
-}
-
-.offer__title {
-  margin-bottom: 20px;
-  font-size: 34px;
-  line-height: 1.4;
-  font-weight: 500;
-}
-
-.offer__desc {
-  max-width: 420px;
-  margin-bottom: 30px;
-  color: var(--text-color);
-  font-size: 16px;
-  line-height: 1.9;
-}
-
-.offer__image {
-  position: relative;
-  display: flex;
-  flex: 1;
-  align-items: center;
-  justify-content: center;
-}
-
-.offer__image img {
-  max-width: 100%;
-  height: auto;
-}
-
-.offer__car-image {
-  display: block;
-}
-
-.offer__car-image--mobile {
-  display: none;
+.brand-logos img {
+  height: 3.5rem;
+  opacity: 0.6;
 }

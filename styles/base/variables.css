@@ -1,13 +1,24 @@
 :root {
-  --first-color: hsl(220, 67%, 56%);
-  --text-color: hsl(210, 12%, 74%);
-  --text-color-light: hsl(225, 4%, 55%);
-  --white-color: hsl(0, 0%, 100%);
-  --body-color: hsl(240, 8%, 4%);
-  --shadow-soft: rgba(7, 10, 18, 0.25);
-  --radius-lg: 24px;
-  --radius-md: 12px;
-  --radius-sm: 8px;
-  --content-max-width: 1200px;
-  --transition-fast: 0.2s ease;
+  /* Colors */
+  --bg: #070708;
+  --surface: #10131a;
+  --surface-2: #171b26;
+  --primary: #3b72e0;
+  --text: #ffffff;
+  --muted: #a0a4b0;
+  --success: #1fe27a;
+
+  /* Typography */
+  --font: "Exo", sans-serif;
+  --fs-h1: 1.75rem;
+  --fs-h2: 1.25rem;
+  --fs-h3: 1.1rem;
+  --fs-body: 0.9rem;
+  --fs-small: 0.75rem;
+
+  /* Layout */
+  --container: 1024px;
+  --header-h: 4rem;
+  --radius: 1rem;
+  --gutter: 1.5rem;
 }

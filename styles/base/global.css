@@ -1,27 +1,29 @@
 body {
-  font-family: "Poppins", Arial, sans-serif;
-  background-color: var(--body-color);
-  color: var(--white-color);
-  line-height: 1.6;
+  background: var(--bg);
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 
-main {
-  margin-top: -7rem;
-  background: var(--body-color);
+main > section {
+  max-width: var(--container);
+  margin-inline: auto;
+  padding: 6rem var(--gutter) 0;
 }
 
-section,
-footer,
-header {
-  position: relative;
+.section-title {
+  text-align: center;
+  margin-bottom: 2.5rem;
 }
 
-button:focus-visible,
-a:focus-visible {
-  outline: 2px solid var(--first-color);
-  outline-offset: 4px;
+:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
 }
 
-.hidden {
-  display: none !important;
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+    scroll-behavior: auto !important;
+  }
 }

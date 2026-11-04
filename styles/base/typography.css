@@ -1,27 +1,25 @@
-h1,
-h2,
-h3,
-.hero-title,
-.hero-subtitle,
-.offer__title,
-.brand-block h2,
-.links-col h2 {
-  font-family: "Exo", Arial, sans-serif;
+body {
+  font-family: var(--font);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+  color: var(--text);
 }
 
-.hero-title {
-  font-weight: 600;
-  font-size: clamp(2.2rem, 4vw, 3.5rem);
+h1 {
+  font-size: var(--fs-h1);
+  font-weight: 500;
 }
 
-.hero-subtitle {
-  font-weight: 600;
-  font-size: clamp(1.5rem, 3vw, 2.2rem);
+h2 {
+  font-size: var(--fs-h2);
+  font-weight: 500;
 }
 
-.text-top,
-.featured-cars h2,
-.about-content h2,
-.offer__title {
-  letter-spacing: -0.03em;
+h3 {
+  font-size: var(--fs-h3);
+  font-weight: 500;
+}
+
+p {
+  color: var(--muted);
 }
