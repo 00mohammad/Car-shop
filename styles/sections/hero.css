@@ -1,71 +1,85 @@
-.hero {
-  max-width: none !important;
-  padding: calc(var(--header-h) + 1.5rem) var(--gutter) 3rem !important;
-  text-align: center;
-  background: radial-gradient(ellipse at 15% 10%, rgba(30, 50, 110, 0.4), transparent 55%);
-}
-
-.hero-title {
-  margin-bottom: 1.25rem;
-}
-
-.hero-subtitle {
-  color: var(--text);
-  font-size: 1rem;
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .car-info {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.3rem;
-  font-size: var(--fs-small);
+  gap: 0.5rem;
+  color: var(--text-color);
 }
 
-.car-info img {
-  width: 0.8rem;
-}
-
-.hero-car {
-  width: min(300px, 70vw);
-  margin: 1rem auto 2rem;
+.hero-title,
+.hero-subtitle {
+  margin: 0;
 }
 
 .items {
   display: flex;
+  align-items: center;
   justify-content: center;
-  gap: 3rem;
+  gap: 5rem;
+  margin-top: 5rem;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.item > img {
+  margin-bottom: 2rem;
+}
+
+.item h2 {
+  margin: 0;
+  font-family: "Exo", Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.item > p {
+  margin: 0;
+  color: var(--text-color);
+}
+
+.hero__side-decoration {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(47%);
+}
+
+.hero__ring-container {
+  position: relative;
+  display: flex;
+  width: 150px;
+  height: 150px;
+  margin-top: 5rem;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.hero__ring--inner,
+.hero__ring--outer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 70%;
+  height: 70%;
+}
+
+.hero__ring-label {
+  position: absolute;
+  z-index: 1;
+  margin-right: 2.8rem;
   margin-bottom: 2.5rem;
-}
-
-.item img {
-  width: 1rem;
-  margin: 0 auto 0.4rem;
-}
-
-.item strong {
-  display: block;
-  font-size: 1.1rem;
-  font-weight: 500;
-}
-
-.item span {
-  font-size: 0.6rem;
-  color: var(--muted);
-  text-transform: uppercase;
-}
-
-.start-button {
-  width: 5.5rem;
-  height: 5.5rem;
-  border: 2px solid var(--success);
-  border-radius: 50%;
-  background: #06130d;
-  font-size: var(--fs-small);
-  box-shadow: 0 0 1.5rem rgba(31, 226, 122, 0.35), inset 0 0 1rem rgba(31, 226, 122, 0.2);
-  transition: box-shadow 0.3s;
-}
-
-.start-button[aria-pressed="true"] {
-  box-shadow: 0 0 2.5rem rgba(31, 226, 122, 0.75), inset 0 0 1.5rem rgba(31, 226, 122, 0.45);
 }

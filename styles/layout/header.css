@@ -1,71 +1,71 @@
-.header {
-  position: fixed;
+header {
   top: 0;
-  left: 0;
-  z-index: 100;
+  z-index: 40;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  width: 100%;
-  height: var(--header-h);
-  padding-inline: max(var(--gutter), calc((100% - var(--container)) / 2 + var(--gutter)));
-  background: linear-gradient(var(--bg), transparent);
-  transition: background 0.3s;
-}
-
-.header.scrolled {
-  background: rgba(7, 7, 8, 0.92);
-  backdrop-filter: blur(10px);
+  align-items: flex-start;
+  padding: 0 20px;
+  background-color: var(--body-color);
 }
 
 .logo {
+  position: relative;
   display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 0.4rem;
+  width: 200px;
+  height: 200px;
 }
 
-.logo img {
-  height: 1.4rem;
+.header__background-shape--mobile,
+.header__mobile-decoration-wrapper,
+.hero__side-decoration--mobile,
+.hero__car-image--mobile {
+  display: none;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-links {
   display: flex;
-  gap: 2.5rem;
-  font-size: var(--fs-small);
+  align-items: center;
+  list-style: none;
+  gap: 3rem;
 }
 
 .header-links a {
-  color: var(--muted);
-  transition: color 0.2s;
+  display: block;
+  padding: 30px 16px;
+  color: var(--white-color);
+  font-size: 16px;
+  font-family: "Poppins";
+  text-transform: uppercase;
+  transition: color var(--transition-fast);
 }
 
-.header-links a:hover,
-.header-links a.active {
-  color: var(--primary);
+.header-links a:hover {
+  color: var(--first-color);
 }
+
+
 
 .hamburger {
   display: none;
-  flex-direction: column;
-  gap: 0.3rem;
-  padding: 0.5rem;
+  cursor: pointer;
+  width: 34px;
+  border: 0;
+  background: transparent;
+  padding: 0;
 }
 
 .hamburger .bar {
-  width: 1.5rem;
-  height: 2px;
-  background: var(--text);
-  transition: transform 0.3s, opacity 0.3s;
-}
-
-.hamburger[aria-expanded="true"] .bar:nth-child(1) {
-  transform: translateY(0.4rem) rotate(45deg);
-}
-
-.hamburger[aria-expanded="true"] .bar:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger[aria-expanded="true"] .bar:nth-child(3) {
-  transform: translateY(-0.4rem) rotate(-45deg);
+  height: 4px;
+  margin: 3px 0;
+  background-color: var(--white-color);
+  border-radius: 2px;
 }
