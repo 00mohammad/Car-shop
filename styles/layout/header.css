@@ -8,15 +8,6 @@ header {
   background-color: var(--body-color);
 }
 
-.logo {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  height: 200px;
-}
-
 .header__background-shape--mobile,
 .header__mobile-decoration-wrapper,
 .hero__side-decoration--mobile,
@@ -51,8 +42,6 @@ nav {
 .header-links a:hover {
   color: var(--first-color);
 }
-
-
 
 .hamburger {
   display: none;

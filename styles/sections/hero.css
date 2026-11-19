@@ -52,7 +52,7 @@
 .hero__side-decoration {
   position: absolute;
   right: 0;
-  top: 50%;
+  top: 0;
   transform: translateY(47%);
 }
 
