@@ -2,7 +2,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: baseline;
-  background-image: url(./assets/img/hero-shape-big.png);
+  background-image: url(../../assets/img/hero-shape-big.png);
   background-repeat: no-repeat;
   background-size: 25%;
   width: 100%;
@@ -32,7 +32,7 @@ nav {
 
 .header-links a {
   display: block;
-  padding: 30px 16px;
+  padding: 29px 0px 29px 0px;
   color: var(--white-color);
   font-size: 16px;
   font-family: "Poppins";
@@ -58,4 +58,15 @@ nav {
   margin: 3px 0;
   background-color: var(--white-color);
   border-radius: 2px;
+}
+
+.header__logo-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header__logo-content h1 {
+  font-weight: 500;
+  font-size: 16px;
 }

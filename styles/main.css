@@ -1,17 +1,22 @@
 /* Base */
+
 @import "./base/reset.css";
 @import "./base/variables.css";
 @import "./base/global.css";
 @import "./base/typography.css";
 
 /* Layout */
+
 @import "./layout/header.css";
+
 @import "./layout/footer.css";
 
 /* Components */
+
 @import "./components/cards.css";
 
 /* Sections */
+
 @import "./sections/hero.css";
 @import "./sections/about.css";
 @import "./sections/popular.css";
@@ -19,4 +24,5 @@
 @import "./sections/offers.css";
 
 /* Responsive */
+
 @import "./responsive.css";
