@@ -115,7 +115,7 @@
   }
 
   .header__logo-image {
-    width: 90px;
+    width: 40px;
     height: 2rem;
     margin: 0;
   }
@@ -125,44 +125,75 @@
   }
 
   /* Mobile Navigation */
+  /* Header */
+
+  header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 100px;
+    padding: 0 1.5rem;
+    background-image: none;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    height: auto;
+  }
+
+  .header__logo-content {
+    align-items: center;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 34px;
+    margin: 0;
+    color: aliceblue;
+  }
+
+  /* Navigation */
+
+  nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: block;
+    z-index: 1000;
+  }
 
   .header-links {
     display: none;
-    flex-basis: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+    margin: 0;
+    padding: 1rem 0;
     background-color: var(--text-color-light);
   }
 
   .header-links.is-open {
     display: flex;
-    flex-direction: column;
-    gap: 0;
-    padding: 1rem 0 0.5rem;
   }
 
   .header-links li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 100%;
+    text-align: center;
   }
 
   .header-links a {
-    width: 15rem;
-    padding: 1rem 0;
+    display: block;
+    width: 100%;
+    padding: 1rem;
     text-align: center;
-    font-size: 20px;
-  }
-
-  .header-links a:hover,
-  .header-links li a:hover,
-  .header-links .header-cat-button:hover {
-    color: var(--first-color);
-  }
-
-  .header-links .header-cat-button {
-    margin: 0 0 20px;
-    padding: 30px 16px;
-    border: none;
-    border-radius: 0;
+    font-size: 16px;
   }
 
   /* Hero Section */
@@ -446,11 +477,32 @@
   }
 }
 
+@media (max-width: 425px) {
+  .hero-content {
+    margin-top: 30%;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding-top: 10px;
+    background-image: url(./assets/img/hero-shape-big-mobile.png);
+    display: block;
+    height: auto;
+  }
+
+  .hamburger {
+  }
+}
+
 /* ========================================
    Small Mobile
    ======================================== */
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   .featured-cars h2 {
     padding: 1.5rem;
   }
@@ -462,8 +514,23 @@
   .featured-cars__filters img {
     margin-right: 1rem;
   }
-}
 
+  .hero-content {
+    margin-top: 30%;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding-top: 10px;
+    background-image: url(./assets/img/hero-shape-big-mobile.png);
+    display: block;
+    height: auto;
+  }
+}
 
 /* ========================================
    Tablet: 769px – 960px
