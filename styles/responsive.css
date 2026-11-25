@@ -125,23 +125,31 @@
   }
 
   /* Mobile Navigation */
-  /* Header */
 
   header {
-    position: relative;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
-    height: 100px;
-    padding: 0 1.5rem;
-    background-image: none;
+    justify-content: space-around;
+    align-items: baseline;
+    background-image: url(/assets/img/hero-shape-big.png);
+    background-repeat: no-repeat;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: stretch;
+  
   }
 
   .logo {
     display: flex;
     align-items: center;
     height: auto;
+  }
+
+  .logo a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 31rem;
   }
 
   .header__logo-content {
@@ -154,7 +162,7 @@
     justify-content: center;
     width: 34px;
     margin: 0;
-    color: aliceblue;
+    background-color: white;
   }
 
   /* Navigation */
@@ -475,6 +483,10 @@
     max-width: 100%;
     height: auto;
   }
+
+  .hero-content {
+    margin-top: 30%;
+  }
 }
 
 @media (max-width: 425px) {
@@ -492,9 +504,6 @@
     background-image: url(./assets/img/hero-shape-big-mobile.png);
     display: block;
     height: auto;
-  }
-
-  .hamburger {
   }
 }
 
