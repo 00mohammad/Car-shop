@@ -132,10 +132,9 @@
     align-items: baseline;
     background-image: url(/assets/img/hero-shape-big.png);
     background-repeat: no-repeat;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-content: stretch;
-  
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: stretch;
   }
 
   .logo {
